@@ -1,0 +1,40 @@
+<map id="interruptHandler" name="interruptHandler">
+<area shape="rect" id="node2" href="$group___x_mas_run.html#gaa7d8686bcb6a92421aeba74757c6cabb" title="Handles everything related to the timer interrupts. " alt="" coords="173,385,271,412"/>
+<area shape="rect" id="node30" href="$group___keyboard.html#ga7038ddb0c35ef732a786679094a9de0e" title="Gets the scan code read from the keyboard. " alt="" coords="185,917,259,944"/>
+<area shape="rect" id="node32" href="$group___x_mas_run.html#gaa46516fec27d26c19d267394d5b2d9db" title="Handles everything related to the keyboard interrupts. " alt="" coords="175,689,269,716"/>
+<area shape="rect" id="node33" href="$group___x_mas_run.html#ga1b1dcdb3762a6408c2b5ad053e0848eb" title="Handles everything related to the mouse interrupts. " alt="" coords="167,740,277,767"/>
+<area shape="rect" id="node3" href="$group___graphics.html#gacffa4b2e3dcebc554a5c24dec748eb04" title="Extracts date and hour from the RTC. " alt="" coords="335,183,449,209"/>
+<area shape="rect" id="node9" href="$group___graphics.html#ga84e0c347e163833410a8df9d914402fa" title="Updates the value of the days, hours, minutes and seconds of the countdown. " alt="" coords="349,233,435,260"/>
+<area shape="rect" id="node15" href="$group___graphics.html#gaadff1c974f62a2b8f18fde71535809fb" title="Updates the bitmaps of the countdown. " alt="" coords="335,335,449,361"/>
+<area shape="rect" id="node17" href="$group___graphics.html#ga2b9d84216dd1b37a440ca6b71784c2fc" title="Initializes the positions of the gift, the candy cane, the pines, the snowball, the first set of clou..." alt="" coords="350,588,434,615"/>
+<area shape="rect" id="node18" href="$group___graphics.html#gaaa565b7e974eec01db91380f3ba991d2" title="Resets the choose your character plaque back to the default character. Resets the distances (jump and..." alt="" coords="353,639,431,665"/>
+<area shape="rect" id="node19" href="$group___graphics.html#gae5f0e30e1262615f852a85d4db3c8261" title="Updates every bitmap to the next positions. " alt="" coords="343,385,441,412"/>
+<area shape="rect" id="node22" href="$group___graphics.html#ga307c4ac67d1d0316a5e01620930504c5" title="Updates the character position when it jumps. " alt="" coords="367,436,417,463"/>
+<area shape="rect" id="node23" href="$group___state_machine.html#ga993a672fc77bafce6ec7ef9db4008071" title="Updates the state related to the character. " alt="" coords="345,689,439,716"/>
+<area shape="rect" id="node24" href="$group___graphics.html#ga84ffc930c9e1c8c6de9173eadd3c975d" title="Updates the character position when it gets down. " alt="" coords="351,487,433,513"/>
+<area shape="rect" id="node25" href="$group___graphics.html#gab2dd31b45cae53400c50cc728db456ca" title="Updates the obstacles positions ang gets the next set of obstacles ready which is chosen randomly out..." alt="" coords="373,31,411,57"/>
+<area shape="rect" id="node26" href="$group___graphics.html#ga60fea1793f63faa9ab7db42296e3d8a7" title="Updates score bitmaps with its value. " alt="" coords="343,284,441,311"/>
+<area shape="rect" id="node27" href="$group___graphics.html#ga9c0ab323b39cd0254dbfdaa80dcac495" title="Checks if there&#39;s a collision betwwen the character and the obstacles. " alt="" coords="357,81,427,108"/>
+<area shape="rect" id="node28" href="$group___state_machine.html#ga721160d2b84b87f2f8a78aa35978eb59" title="Updates the state related to the menu. " alt="" coords="344,537,440,564"/>
+<area shape="rect" id="node29" href="$group__video__gr.html#ga4f5703f9b121dc5e85673680a1082c7d" title="copies what&#39;s in the double buffer to the video mem. " alt="" coords="357,132,427,159"/>
+<area shape="rect" id="node4" href="$group___r_t_c.html#gaa2b091a9cf7dce22b896bb1f041b3e2f" title="Checks if the rtc is updating, verifying the UIP in Register A. " alt="" coords="513,5,621,32"/>
+<area shape="rect" id="node5" href="$group___r_t_c.html#ga151db8d516dd649f8d14dab18be79882" title="Gets the current date from the RTC in binary. " alt="" coords="533,107,600,133"/>
+<area shape="rect" id="node8" href="$group___r_t_c.html#ga87be9dbdb025ecbb1bd326713842f043" title="Gets the current hour from the RTC in binary. " alt="" coords="533,56,600,83"/>
+<area shape="rect" id="node6" href="$group___r_t_c.html#gadc99d6e13380791f37d25254f382185b" title="Checks if the values given by the RTC are in BCD, verifying the DM in Register B. ..." alt="" coords="694,56,753,83"/>
+<area shape="rect" id="node7" href="$group___r_t_c.html#gac415cba00d3b076015e540f85de75b45" title="Converts values from bcd to binary. " alt="" coords="675,107,772,133"/>
+<area shape="rect" id="node10" href="$group___graphics.html#ga16779210d6883bbec22aaed4546c2738" title="Counts how many days there is until Christmas. " alt="" coords="531,309,602,336"/>
+<area shape="rect" id="node12" href="$group___graphics.html#gaa4e1ad5e2668cefab925f9151e82cf56" title="Calculates the number of hours until the next day. " alt="" coords="529,157,604,184"/>
+<area shape="rect" id="node13" href="$group___graphics.html#ga9c96c725c4779f2b277be96d399752c0" title="Calculates the number of minutes until the next hour. " alt="" coords="522,208,611,235"/>
+<area shape="rect" id="node14" href="$group___graphics.html#gad894cc2aa0d11dd0d068a26a970568c0" title="Calculates the number of seconds until the next minute. " alt="" coords="521,259,613,285"/>
+<area shape="rect" id="node11" href="$group___graphics.html#ga0e4bd2e0f0b7e0074f5c00a2373ef7b8" title="Calculates the number of days from 1/1/0001 until the date passed in the arguments. " alt="" coords="703,309,743,336"/>
+<area shape="rect" id="node16" href="$group___graphics.html#ga2480f417fa8ca1b9b31cf7677dff4541" title="Converts the number passed as argument to the right bitmap number. " alt="" coords="507,360,627,387"/>
+<area shape="rect" id="node20" href="$group__video__gr.html#gaec2a87af63bfdab6d54b82012bdaa80e" title="Calls the function drawBitmap. " alt="" coords="525,411,608,437"/>
+<area shape="rect" id="node21" href="$group___bitmap.html#ga9d23448e26cd2737b2dff4df6e886f79" title="Draws an unscaled, unrotated bitmap at the given position. " alt="" coords="678,411,769,437"/>
+<area shape="rect" id="node31" href="$group___keyboard.html#gabb9ee10191569258e0f22bdd0a95ba62" title="Waits 20 microseconds. " alt="" coords="365,1044,419,1071"/>
+<area shape="rect" id="node34" href="$graphics_8c.html#ab4e9b69ed0ba3bbe963987fdba97956a" title="drawMouse" alt="" coords="348,892,436,919"/>
+<area shape="rect" id="node35" href="$group___graphics.html#gad474a474d64464f56c893125ae05fe15" title="Checks if the player chose an option in the Main Menu. " alt="" coords="334,943,450,969"/>
+<area shape="rect" id="node36" href="$group___graphics.html#ga7b226a076e2fce195972329b07d54956" title="Checks if the player chose an option in the Game Over Menu. " alt="" coords="333,993,451,1020"/>
+<area shape="rect" id="node37" href="$group___graphics.html#gad55a59d3fd603520980e4794f29e83bd" title="Checks if the player chose an option in the Options Menu. " alt="" coords="325,740,459,767"/>
+<area shape="rect" id="node38" href="$group___graphics.html#gad185badd1bb6af7027ee2fba1539c055" title="Updates the plaque position depending on the player option. If option is 1, the plaque will move to t..." alt="" coords="347,791,437,817"/>
+<area shape="rect" id="node39" href="$group___graphics.html#ga1ff7208d640a7d4c62a49f5f81306be4" title="Updates the character depending on the player option. If option is 1, the character would be the deer..." alt="" coords="341,841,443,868"/>
+</map>

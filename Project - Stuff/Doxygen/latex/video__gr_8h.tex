@@ -1,0 +1,25 @@
+\hypertarget{video__gr_8h}{}\section{video\+\_\+gr.\+h File Reference}
+\label{video__gr_8h}\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+{\ttfamily \#include \char`\"{}bitmap.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__video__gr_gac854e8352d97c69bdfe247573593ba3b}{V\+R\+A\+M\+\_\+\+P\+H\+Y\+S\+\_\+\+A\+D\+DR}~0x\+E0000000
+\item 
+\#define \hyperlink{group__video__gr_gabf6f66114c31b8f87c80534ca695a00b}{H\+\_\+\+R\+ES}~1024
+\item 
+\#define \hyperlink{group__video__gr_gaac2466862bcfc18231c38fe1eacc22e3}{V\+\_\+\+R\+ES}~768
+\item 
+\#define \hyperlink{group__video__gr_ga35faf89171af20cd21088c37d62bb7ee}{B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}~8
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{group__video__gr_gacef21667c79365d57a084bed994c2189}{vg\+\_\+init} (unsigned short mode)
+\begin{DoxyCompactList}\small\item\em Initializes the video module in graphics mode. \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_ga42f593e6656f1a978315aff02b1bcebf}{vg\+\_\+exit} (void)
+\begin{DoxyCompactList}\small\item\em Returns to default Minix 3 text mode (0x03\+: 25 x 80, 16 colors) \end{DoxyCompactList}\item 
+void \hyperlink{group__video__gr_ga4f5703f9b121dc5e85673680a1082c7d}{D\+Bto\+VM} ()
+\begin{DoxyCompactList}\small\item\em copies what\textquotesingle{}s in the double buffer to the video mem. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__gr_gaec2a87af63bfdab6d54b82012bdaa80e}{call\+Bitmap} (\hyperlink{struct_bitmap}{Bitmap} $\ast$bmp, int x, int y)
+\begin{DoxyCompactList}\small\item\em Calls the function draw\+Bitmap. \end{DoxyCompactList}\end{DoxyCompactItemize}

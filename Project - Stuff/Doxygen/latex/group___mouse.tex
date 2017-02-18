@@ -1,0 +1,162 @@
+\hypertarget{group___mouse}{}\section{Mouse}
+\label{group___mouse}\index{Mouse@{Mouse}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___mouse_ga99506573209b197b84ee22a228b89fbd}{mouse\+\_\+subscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables mouse interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_ga685ad2706aca36d9869a30a19b9f446a}{mouse\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes mouse interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___mouse_ga4fb4a7f0f7a9ea26af0c1184b53f4bf3}{ddelay} ()
+\begin{DoxyCompactList}\small\item\em Waits 20 microseconds. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_gaad10b68ed5addb9bd150288dd869d586}{mouse\+\_\+\+Read} ()
+\begin{DoxyCompactList}\small\item\em Reads the output buffer. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_gae7c331cf6f4c63d80b6bce11c2c8e771}{mouse\+\_\+\+Write} (unsigned long cmd, unsigned long port)
+\begin{DoxyCompactList}\small\item\em Writes in the mouse. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_ga4f52e05e730b3482a7b249d818b816b1}{write\+\_\+\+Controller} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em Calls mouse\+\_\+\+Writer, used to send the cmd to write in the mouse. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_gad7c890a972e1f92e3a494d356795a103}{mouse\+\_\+cmd} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em Writes in the mouse, verifying the A\+CK of the mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___mouse_ga4fb4a7f0f7a9ea26af0c1184b53f4bf3}\label{group___mouse_ga4fb4a7f0f7a9ea26af0c1184b53f4bf3}} 
+\index{Mouse@{Mouse}!ddelay@{ddelay}}
+\index{ddelay@{ddelay}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{ddelay()}{ddelay()}}
+{\footnotesize\ttfamily void ddelay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Waits 20 microseconds. 
+
+\mbox{\Hypertarget{group___mouse_gad7c890a972e1f92e3a494d356795a103}\label{group___mouse_gad7c890a972e1f92e3a494d356795a103}} 
+\index{Mouse@{Mouse}!mouse\+\_\+cmd@{mouse\+\_\+cmd}}
+\index{mouse\+\_\+cmd@{mouse\+\_\+cmd}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+cmd()}{mouse\_cmd()}}
+{\footnotesize\ttfamily int mouse\+\_\+cmd (\begin{DoxyParamCaption}\item[{unsigned long}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Writes in the mouse, verifying the A\+CK of the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & command to write in the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{group___mouse_gad7c890a972e1f92e3a494d356795a103_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___mouse_gaad10b68ed5addb9bd150288dd869d586}\label{group___mouse_gaad10b68ed5addb9bd150288dd869d586}} 
+\index{Mouse@{Mouse}!mouse\+\_\+\+Read@{mouse\+\_\+\+Read}}
+\index{mouse\+\_\+\+Read@{mouse\+\_\+\+Read}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+\+Read()}{mouse\_Read()}}
+{\footnotesize\ttfamily int mouse\+\_\+\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads the output buffer. 
+
+\begin{DoxyReturn}{Returns}
+Return data, and -\/1 if it was not successfull 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{group___mouse_gaad10b68ed5addb9bd150288dd869d586_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___mouse_ga99506573209b197b84ee22a228b89fbd}\label{group___mouse_ga99506573209b197b84ee22a228b89fbd}} 
+\index{Mouse@{Mouse}!mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}}
+\index{mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+subscribe\+\_\+int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns bit order in interrupt mask; negative value on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___mouse_ga685ad2706aca36d9869a30a19b9f446a}\label{group___mouse_ga685ad2706aca36d9869a30a19b9f446a}} 
+\index{Mouse@{Mouse}!mouse\+\_\+unsubscribe\+\_\+int@{mouse\+\_\+unsubscribe\+\_\+int}}
+\index{mouse\+\_\+unsubscribe\+\_\+int@{mouse\+\_\+unsubscribe\+\_\+int}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+unsubscribe\+\_\+int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___mouse_gae7c331cf6f4c63d80b6bce11c2c8e771}\label{group___mouse_gae7c331cf6f4c63d80b6bce11c2c8e771}} 
+\index{Mouse@{Mouse}!mouse\+\_\+\+Write@{mouse\+\_\+\+Write}}
+\index{mouse\+\_\+\+Write@{mouse\+\_\+\+Write}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+\+Write()}{mouse\_Write()}}
+{\footnotesize\ttfamily int mouse\+\_\+\+Write (\begin{DoxyParamCaption}\item[{unsigned long}]{cmd,  }\item[{unsigned long}]{port }\end{DoxyParamCaption})}
+
+
+
+Writes in the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & command to write in the mouse \\
+\hline
+{\em port} & to write in the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data, and -\/1 if it was not successfull 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{group___mouse_gae7c331cf6f4c63d80b6bce11c2c8e771_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___mouse_ga4f52e05e730b3482a7b249d818b816b1}\label{group___mouse_ga4f52e05e730b3482a7b249d818b816b1}} 
+\index{Mouse@{Mouse}!write\+\_\+\+Controller@{write\+\_\+\+Controller}}
+\index{write\+\_\+\+Controller@{write\+\_\+\+Controller}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{write\+\_\+\+Controller()}{write\_Controller()}}
+{\footnotesize\ttfamily int write\+\_\+\+Controller (\begin{DoxyParamCaption}\item[{unsigned long}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Calls mouse\+\_\+\+Writer, used to send the cmd to write in the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & command to write in the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{group___mouse_ga4f52e05e730b3482a7b249d818b816b1_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,20 @@
+\hypertarget{rtc_8c}{}\section{rtc.\+c File Reference}
+\label{rtc_8c}\index{rtc.\+c@{rtc.\+c}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___r_t_c_gaa2b091a9cf7dce22b896bb1f041b3e2f}{is\+R\+T\+C\+Updating} ()
+\begin{DoxyCompactList}\small\item\em Checks if the rtc is updating, verifying the U\+IP in Register A. \end{DoxyCompactList}\item 
+int \hyperlink{group___r_t_c_gadc99d6e13380791f37d25254f382185b}{is\+B\+CD} ()
+\begin{DoxyCompactList}\small\item\em Checks if the values given by the R\+TC are in B\+CD, verifying the DM in Register B. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{group___r_t_c_gac415cba00d3b076015e540f85de75b45}{B\+C\+Dto\+Binary} (unsigned long $\ast$bcd)
+\begin{DoxyCompactList}\small\item\em Converts values from bcd to binary. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga151db8d516dd649f8d14dab18be79882}{get\+Date} (unsigned long $\ast$day, unsigned long $\ast$month, unsigned long $\ast$year)
+\begin{DoxyCompactList}\small\item\em Gets the current date from the R\+TC in binary. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga87be9dbdb025ecbb1bd326713842f043}{get\+Hour} (unsigned long $\ast$hour, unsigned long $\ast$minutes, unsigned long $\ast$seconds)
+\begin{DoxyCompactList}\small\item\em Gets the current hour from the R\+TC in binary. \end{DoxyCompactList}\end{DoxyCompactItemize}

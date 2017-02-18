@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['callbitmap',['callBitmap',['../group__video__gr.html#gaec2a87af63bfdab6d54b82012bdaa80e',1,'callBitmap(Bitmap *bmp, int x, int y):&#160;video_gr.c'],['../group__video__gr.html#gaec2a87af63bfdab6d54b82012bdaa80e',1,'callBitmap(Bitmap *bmp, int x, int y):&#160;video_gr.c']]],
+  ['changeplayer',['changePlayer',['../group___graphics.html#ga1ff7208d640a7d4c62a49f5f81306be4',1,'changePlayer(Game *game, int option):&#160;graphics.c'],['../group___graphics.html#ga1ff7208d640a7d4c62a49f5f81306be4',1,'changePlayer(Game *game, int option):&#160;graphics.c']]],
+  ['check_5fmenu',['check_menu',['../group___state_machine.html#ga721160d2b84b87f2f8a78aa35978eb59',1,'check_menu(event_game evt, States *gameStates):&#160;stateMachine.c'],['../group___state_machine.html#ga721160d2b84b87f2f8a78aa35978eb59',1,'check_menu(event_game evt, States *gameStates):&#160;stateMachine.c']]],
+  ['check_5fmove',['check_move',['../group___state_machine.html#ga993a672fc77bafce6ec7ef9db4008071',1,'check_move(event_t evt, States *gameStates):&#160;stateMachine.c'],['../group___state_machine.html#ga993a672fc77bafce6ec7ef9db4008071',1,'check_move(event_t evt, States *gameStates):&#160;stateMachine.c']]],
+  ['clicksgameover',['clicksGameOver',['../group___graphics.html#ga7b226a076e2fce195972329b07d54956',1,'clicksGameOver():&#160;graphics.c'],['../group___graphics.html#ga7b226a076e2fce195972329b07d54956',1,'clicksGameOver():&#160;graphics.c']]],
+  ['clicksmainmenu',['clicksMainMenu',['../group___graphics.html#gad474a474d64464f56c893125ae05fe15',1,'clicksMainMenu():&#160;graphics.c'],['../group___graphics.html#gad474a474d64464f56c893125ae05fe15',1,'clicksMainMenu():&#160;graphics.c']]],
+  ['clicksoptionsmenu',['clicksOptionsMenu',['../group___graphics.html#gad55a59d3fd603520980e4794f29e83bd',1,'clicksOptionsMenu():&#160;graphics.c'],['../group___graphics.html#gad55a59d3fd603520980e4794f29e83bd',1,'clicksOptionsMenu():&#160;graphics.c']]],
+  ['collision',['collision',['../group___graphics.html#ga9c0ab323b39cd0254dbfdaa80dcac495',1,'collision(States *gameStates):&#160;graphics.c'],['../group___graphics.html#ga9c0ab323b39cd0254dbfdaa80dcac495',1,'collision(States *gameStates):&#160;graphics.c']]],
+  ['countdown',['countDown',['../group___graphics.html#ga84e0c347e163833410a8df9d914402fa',1,'countDown(Game *game):&#160;graphics.c'],['../group___graphics.html#ga84e0c347e163833410a8df9d914402fa',1,'countDown(Game *game):&#160;graphics.c']]],
+  ['countdowndraw',['countDownDraw',['../group___graphics.html#gaadff1c974f62a2b8f18fde71535809fb',1,'countDownDraw(Game *game):&#160;graphics.c'],['../group___graphics.html#gaadff1c974f62a2b8f18fde71535809fb',1,'countDownDraw(Game *game):&#160;graphics.c']]]
+];

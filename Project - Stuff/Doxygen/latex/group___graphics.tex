@@ -1,0 +1,654 @@
+\hypertarget{group___graphics}{}\section{Graphics}
+\label{group___graphics}\index{Graphics@{Graphics}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_character}{Character}
+\item 
+struct \hyperlink{struct_down_character}{Down\+Character}
+\item 
+struct \hyperlink{struct_cane}{Cane}
+\item 
+struct \hyperlink{struct_gift}{Gift}
+\item 
+struct \hyperlink{struct_snow}{Snow}
+\item 
+struct \hyperlink{struct_tree}{Tree}
+\item 
+struct \hyperlink{struct_clouds}{Clouds}
+\item 
+struct \hyperlink{struct_plaque}{Plaque}
+\item 
+struct \hyperlink{struct_mouse}{Mouse}
+\item 
+struct \hyperlink{struct_score}{Score}
+\item 
+struct \hyperlink{struct_countdown}{Countdown}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___graphics_ga16103b3c6b6139878e7c3de81cf56925}{position\+Mouse\+Init} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Initializes the position of the mouse cursor. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga2b9d84216dd1b37a440ca6b71784c2fc}{position\+Init} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Initializes the positions of the gift, the candy cane, the pines, the snowball, the first set of clouds, the second set of clouds and the game score. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gaaa565b7e974eec01db91380f3ba991d2}{play\+Again} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Resets the choose your character plaque back to the default character. Resets the distances (jump and run distance) back to the default. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gae5f0e30e1262615f852a85d4db3c8261}{update\+Frame} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Updates every bitmap to the next positions. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gabde7c0fefaf3424db78158c805037cd3}{default\+Player} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Resets the plaque and the character to the default. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga1ff7208d640a7d4c62a49f5f81306be4}{change\+Player} (\hyperlink{struct_game}{Game} $\ast$game, int option)
+\begin{DoxyCompactList}\small\item\em Updates the character depending on the player option. If option is 1, the character would be the deer, if 2 the santa claus, if 3 the snowman. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gad185badd1bb6af7027ee2fba1539c055}{draw\+Plaque} (int option)
+\begin{DoxyCompactList}\small\item\em Updates the plaque position depending on the player option. If option is 1, the plaque will move to the deer, if 2 the santa claus, if 3 the snowman. \end{DoxyCompactList}\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{group___graphics_ga2480f417fa8ca1b9b31cf7677dff4541}{number\+To\+Bitmap} (\hyperlink{struct_game}{Game} $\ast$game, int number)
+\begin{DoxyCompactList}\small\item\em Converts the number passed as argument to the right bitmap number. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga60fea1793f63faa9ab7db42296e3d8a7}{score\+Counter} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Updates score bitmaps with its value. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga307c4ac67d1d0316a5e01620930504c5}{jump} ()
+\begin{DoxyCompactList}\small\item\em Updates the character position when it jumps. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga84ffc930c9e1c8c6de9173eadd3c975d}{movedown} ()
+\begin{DoxyCompactList}\small\item\em Updates the character position when it gets down. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gab2dd31b45cae53400c50cc728db456ca}{obj} ()
+\begin{DoxyCompactList}\small\item\em Updates the obstacles positions ang gets the next set of obstacles ready which is chosen randomly out of 3. It\textquotesingle{}s also chosen randomly if there\textquotesingle{}s a snowball in the next set or not. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga9c0ab323b39cd0254dbfdaa80dcac495}{collision} (\hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Checks if there\textquotesingle{}s a collision betwwen the character and the obstacles. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gaab7430a217db9969c46ead48adffbd05}{draw\+Mouse} ()
+\begin{DoxyCompactList}\small\item\em Updates the mouse cursor position. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gad474a474d64464f56c893125ae05fe15}{clicks\+Main\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player chose an option in the Main Menu. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gad55a59d3fd603520980e4794f29e83bd}{clicks\+Options\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player chose an option in the Options Menu. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga7b226a076e2fce195972329b07d54956}{clicks\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player chose an option in the \hyperlink{struct_game}{Game} Over Menu. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gacffa4b2e3dcebc554a5c24dec748eb04}{update\+Date\+Hour} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Extracts date and hour from the R\+TC. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga16779210d6883bbec22aaed4546c2738}{days\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Counts how many days there is until Christmas. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga0e4bd2e0f0b7e0074f5c00a2373ef7b8}{rdn} (unsigned long y, unsigned long m, unsigned long d)
+\begin{DoxyCompactList}\small\item\em Calculates the number of days from 1/1/0001 until the date passed in the arguments. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gad894cc2aa0d11dd0d068a26a970568c0}{seconds\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Calculates the number of seconds until the next minute. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga9c96c725c4779f2b277be96d399752c0}{minutes\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Calculates the number of minutes until the next hour. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gaa4e1ad5e2668cefab925f9151e82cf56}{hours\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Calculates the number of hours until the next day. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga84e0c347e163833410a8df9d914402fa}{count\+Down} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Updates the value of the days, hours, minutes and seconds of the countdown. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gaadff1c974f62a2b8f18fde71535809fb}{count\+Down\+Draw} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Updates the bitmaps of the countdown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_character}{Character} \hyperlink{group___graphics_ga6be64c98dff07b5401940d55c9f75d83}{player}
+\begin{DoxyCompactList}\small\item\em represents the character when it\textquotesingle{}s up \end{DoxyCompactList}\item 
+static \hyperlink{struct_down_character}{Down\+Character} \hyperlink{group___graphics_ga37faf6b2351ee87a7ab6f3ea9c2a02f4}{dplayer}
+\begin{DoxyCompactList}\small\item\em represents the character when it\textquotesingle{}s down \end{DoxyCompactList}\item 
+static \hyperlink{struct_gift}{Gift} \hyperlink{group___graphics_ga6f8fa1a6c397b5d7b17fc82133bfa3d4}{present}
+\begin{DoxyCompactList}\small\item\em represents the gift obstacle \end{DoxyCompactList}\item 
+static \hyperlink{struct_cane}{Cane} \hyperlink{group___graphics_gaba4d7c50cbd75917285fd6c4ec1c1c10}{candy\+Cane}
+\begin{DoxyCompactList}\small\item\em represents the candy cane obstacle \end{DoxyCompactList}\item 
+static \hyperlink{struct_tree}{Tree} \hyperlink{group___graphics_ga98e0c9c163d4fadfce76eebf07b783bf}{pine}
+\begin{DoxyCompactList}\small\item\em represents the pines obstacle \end{DoxyCompactList}\item 
+static \hyperlink{struct_snow}{Snow} \hyperlink{group___graphics_ga5b8079ec1b1df7ef0f8f93056f52b221}{ball}
+\begin{DoxyCompactList}\small\item\em represents the snow ball obstacle \end{DoxyCompactList}\item 
+static \hyperlink{struct_clouds}{Clouds} \hyperlink{group___graphics_ga6e84b95e51e590713cb4891fbe59ea3b}{clouds}
+\begin{DoxyCompactList}\small\item\em represents the first set of clouds \end{DoxyCompactList}\item 
+static \hyperlink{struct_clouds}{Clouds} \hyperlink{group___graphics_gad6ab919c4fef2f8337350a9ce79299a9}{clouds2}
+\begin{DoxyCompactList}\small\item\em represents the second set of clouds \end{DoxyCompactList}\item 
+static \hyperlink{struct_plaque}{Plaque} \hyperlink{group___graphics_ga34de8a6bdc6062347016b82e556b42a7}{plaque}
+\begin{DoxyCompactList}\small\item\em represents the plaque in choose your character menu \end{DoxyCompactList}\item 
+static \hyperlink{struct_score}{Score} \hyperlink{group___graphics_ga8e77a1d25d66a81c79d37786002474c5}{game\+Score}
+\begin{DoxyCompactList}\small\item\em represents the score of the game \end{DoxyCompactList}\item 
+static \hyperlink{struct_countdown}{Countdown} \hyperlink{group___graphics_ga94449fd3ac7dc9c0f223ad7cab4d7287}{countdown}
+\begin{DoxyCompactList}\small\item\em represents countdown until christmas \end{DoxyCompactList}\item 
+static \hyperlink{struct_mouse}{Mouse} \hyperlink{group___graphics_ga07faa847230d0abd8c3db00e3f8cae7a}{mouse}
+\begin{DoxyCompactList}\small\item\em represents the mouse cursor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___graphics_ga1ff7208d640a7d4c62a49f5f81306be4}\label{group___graphics_ga1ff7208d640a7d4c62a49f5f81306be4}} 
+\index{Graphics@{Graphics}!change\+Player@{change\+Player}}
+\index{change\+Player@{change\+Player}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{change\+Player()}{changePlayer()}}
+{\footnotesize\ttfamily void change\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game,  }\item[{int}]{option }\end{DoxyParamCaption})}
+
+
+
+Updates the character depending on the player option. If option is 1, the character would be the deer, if 2 the santa claus, if 3 the snowman. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+{\em option} & int of the character option. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___graphics_ga7b226a076e2fce195972329b07d54956}\label{group___graphics_ga7b226a076e2fce195972329b07d54956}} 
+\index{Graphics@{Graphics}!clicks\+Game\+Over@{clicks\+Game\+Over}}
+\index{clicks\+Game\+Over@{clicks\+Game\+Over}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{clicks\+Game\+Over()}{clicksGameOver()}}
+{\footnotesize\ttfamily int clicks\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the player chose an option in the \hyperlink{struct_game}{Game} Over Menu. 
+
+\begin{DoxyReturn}{Returns}
+1 if the player chose Home, 2 if the player chose Play Again, 0 if nothing was chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___graphics_gad474a474d64464f56c893125ae05fe15}\label{group___graphics_gad474a474d64464f56c893125ae05fe15}} 
+\index{Graphics@{Graphics}!clicks\+Main\+Menu@{clicks\+Main\+Menu}}
+\index{clicks\+Main\+Menu@{clicks\+Main\+Menu}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{clicks\+Main\+Menu()}{clicksMainMenu()}}
+{\footnotesize\ttfamily int clicks\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the player chose an option in the Main Menu. 
+
+\begin{DoxyReturn}{Returns}
+1 if the player chose Play, 2 if the player chose Exit, 3 if the player chose Options, 0 if nothing was chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___graphics_gad55a59d3fd603520980e4794f29e83bd}\label{group___graphics_gad55a59d3fd603520980e4794f29e83bd}} 
+\index{Graphics@{Graphics}!clicks\+Options\+Menu@{clicks\+Options\+Menu}}
+\index{clicks\+Options\+Menu@{clicks\+Options\+Menu}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{clicks\+Options\+Menu()}{clicksOptionsMenu()}}
+{\footnotesize\ttfamily int clicks\+Options\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the player chose an option in the Options Menu. 
+
+\begin{DoxyReturn}{Returns}
+1 if the player chose the deer, 2 if the player chose the Santa Claus , 3 if the player chose the snowman, 0 if nothing was chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___graphics_ga9c0ab323b39cd0254dbfdaa80dcac495}\label{group___graphics_ga9c0ab323b39cd0254dbfdaa80dcac495}} 
+\index{Graphics@{Graphics}!collision@{collision}}
+\index{collision@{collision}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily int collision (\begin{DoxyParamCaption}\item[{\hyperlink{struct_states}{States} $\ast$}]{game\+States }\end{DoxyParamCaption})}
+
+
+
+Checks if there\textquotesingle{}s a collision betwwen the character and the obstacles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+States} & the struct with the current states in the two state machines \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if collision, 0 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___graphics_ga84e0c347e163833410a8df9d914402fa}\label{group___graphics_ga84e0c347e163833410a8df9d914402fa}} 
+\index{Graphics@{Graphics}!count\+Down@{count\+Down}}
+\index{count\+Down@{count\+Down}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{count\+Down()}{countDown()}}
+{\footnotesize\ttfamily void count\+Down (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Updates the value of the days, hours, minutes and seconds of the countdown. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{group___graphics_ga84e0c347e163833410a8df9d914402fa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___graphics_gaadff1c974f62a2b8f18fde71535809fb}\label{group___graphics_gaadff1c974f62a2b8f18fde71535809fb}} 
+\index{Graphics@{Graphics}!count\+Down\+Draw@{count\+Down\+Draw}}
+\index{count\+Down\+Draw@{count\+Down\+Draw}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{count\+Down\+Draw()}{countDownDraw()}}
+{\footnotesize\ttfamily void count\+Down\+Draw (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Updates the bitmaps of the countdown. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{group___graphics_gaadff1c974f62a2b8f18fde71535809fb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___graphics_ga16779210d6883bbec22aaed4546c2738}\label{group___graphics_ga16779210d6883bbec22aaed4546c2738}} 
+\index{Graphics@{Graphics}!days\+Left@{days\+Left}}
+\index{days\+Left@{days\+Left}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{days\+Left()}{daysLeft()}}
+{\footnotesize\ttfamily int days\+Left (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Counts how many days there is until Christmas. 
+
+\begin{DoxyReturn}{Returns}
+the number of days until Christmas 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{group___graphics_ga16779210d6883bbec22aaed4546c2738_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___graphics_gabde7c0fefaf3424db78158c805037cd3}\label{group___graphics_gabde7c0fefaf3424db78158c805037cd3}} 
+\index{Graphics@{Graphics}!default\+Player@{default\+Player}}
+\index{default\+Player@{default\+Player}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{default\+Player()}{defaultPlayer()}}
+{\footnotesize\ttfamily void default\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Resets the plaque and the character to the default. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___graphics_gaab7430a217db9969c46ead48adffbd05}\label{group___graphics_gaab7430a217db9969c46ead48adffbd05}} 
+\index{Graphics@{Graphics}!draw\+Mouse@{draw\+Mouse}}
+\index{draw\+Mouse@{draw\+Mouse}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{draw\+Mouse()}{drawMouse()}}
+{\footnotesize\ttfamily void draw\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the mouse cursor position. 
+
+\mbox{\Hypertarget{group___graphics_gad185badd1bb6af7027ee2fba1539c055}\label{group___graphics_gad185badd1bb6af7027ee2fba1539c055}} 
+\index{Graphics@{Graphics}!draw\+Plaque@{draw\+Plaque}}
+\index{draw\+Plaque@{draw\+Plaque}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{draw\+Plaque()}{drawPlaque()}}
+{\footnotesize\ttfamily void draw\+Plaque (\begin{DoxyParamCaption}\item[{int}]{option }\end{DoxyParamCaption})}
+
+
+
+Updates the plaque position depending on the player option. If option is 1, the plaque will move to the deer, if 2 the santa claus, if 3 the snowman. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & int of the character option. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___graphics_gaa4e1ad5e2668cefab925f9151e82cf56}\label{group___graphics_gaa4e1ad5e2668cefab925f9151e82cf56}} 
+\index{Graphics@{Graphics}!hours\+Left@{hours\+Left}}
+\index{hours\+Left@{hours\+Left}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{hours\+Left()}{hoursLeft()}}
+{\footnotesize\ttfamily int hours\+Left (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Calculates the number of hours until the next day. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of hours until the next day 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___graphics_ga307c4ac67d1d0316a5e01620930504c5}\label{group___graphics_ga307c4ac67d1d0316a5e01620930504c5}} 
+\index{Graphics@{Graphics}!jump@{jump}}
+\index{jump@{jump}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily int jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the character position when it jumps. 
+
+\mbox{\Hypertarget{group___graphics_ga9c96c725c4779f2b277be96d399752c0}\label{group___graphics_ga9c96c725c4779f2b277be96d399752c0}} 
+\index{Graphics@{Graphics}!minutes\+Left@{minutes\+Left}}
+\index{minutes\+Left@{minutes\+Left}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{minutes\+Left()}{minutesLeft()}}
+{\footnotesize\ttfamily int minutes\+Left (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Calculates the number of minutes until the next hour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of minutes until the next hour 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___graphics_ga84ffc930c9e1c8c6de9173eadd3c975d}\label{group___graphics_ga84ffc930c9e1c8c6de9173eadd3c975d}} 
+\index{Graphics@{Graphics}!movedown@{movedown}}
+\index{movedown@{movedown}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{movedown()}{movedown()}}
+{\footnotesize\ttfamily void movedown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the character position when it gets down. 
+
+\mbox{\Hypertarget{group___graphics_ga2480f417fa8ca1b9b31cf7677dff4541}\label{group___graphics_ga2480f417fa8ca1b9b31cf7677dff4541}} 
+\index{Graphics@{Graphics}!number\+To\+Bitmap@{number\+To\+Bitmap}}
+\index{number\+To\+Bitmap@{number\+To\+Bitmap}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{number\+To\+Bitmap()}{numberToBitmap()}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ number\+To\+Bitmap (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Converts the number passed as argument to the right bitmap number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+{\em number} & int meant to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bitmap of the number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___graphics_gab2dd31b45cae53400c50cc728db456ca}\label{group___graphics_gab2dd31b45cae53400c50cc728db456ca}} 
+\index{Graphics@{Graphics}!obj@{obj}}
+\index{obj@{obj}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{obj()}{obj()}}
+{\footnotesize\ttfamily void obj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the obstacles positions ang gets the next set of obstacles ready which is chosen randomly out of 3. It\textquotesingle{}s also chosen randomly if there\textquotesingle{}s a snowball in the next set or not. 
+
+\mbox{\Hypertarget{group___graphics_gaaa565b7e974eec01db91380f3ba991d2}\label{group___graphics_gaaa565b7e974eec01db91380f3ba991d2}} 
+\index{Graphics@{Graphics}!play\+Again@{play\+Again}}
+\index{play\+Again@{play\+Again}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{play\+Again()}{playAgain()}}
+{\footnotesize\ttfamily void play\+Again (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Resets the choose your character plaque back to the default character. Resets the distances (jump and run distance) back to the default. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___graphics_ga2b9d84216dd1b37a440ca6b71784c2fc}\label{group___graphics_ga2b9d84216dd1b37a440ca6b71784c2fc}} 
+\index{Graphics@{Graphics}!position\+Init@{position\+Init}}
+\index{position\+Init@{position\+Init}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{position\+Init()}{positionInit()}}
+{\footnotesize\ttfamily void position\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Initializes the positions of the gift, the candy cane, the pines, the snowball, the first set of clouds, the second set of clouds and the game score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___graphics_ga16103b3c6b6139878e7c3de81cf56925}\label{group___graphics_ga16103b3c6b6139878e7c3de81cf56925}} 
+\index{Graphics@{Graphics}!position\+Mouse\+Init@{position\+Mouse\+Init}}
+\index{position\+Mouse\+Init@{position\+Mouse\+Init}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{position\+Mouse\+Init()}{positionMouseInit()}}
+{\footnotesize\ttfamily void position\+Mouse\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Initializes the position of the mouse cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___graphics_ga0e4bd2e0f0b7e0074f5c00a2373ef7b8}\label{group___graphics_ga0e4bd2e0f0b7e0074f5c00a2373ef7b8}} 
+\index{Graphics@{Graphics}!rdn@{rdn}}
+\index{rdn@{rdn}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{rdn()}{rdn()}}
+{\footnotesize\ttfamily int rdn (\begin{DoxyParamCaption}\item[{unsigned long}]{y,  }\item[{unsigned long}]{m,  }\item[{unsigned long}]{d }\end{DoxyParamCaption})}
+
+
+
+Calculates the number of days from 1/1/0001 until the date passed in the arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & year of the date \\
+\hline
+{\em m} & month of the date \\
+\hline
+{\em d} & day of the date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of days from 1/1/0001 until the date passed in the arguments 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___graphics_ga60fea1793f63faa9ab7db42296e3d8a7}\label{group___graphics_ga60fea1793f63faa9ab7db42296e3d8a7}} 
+\index{Graphics@{Graphics}!score\+Counter@{score\+Counter}}
+\index{score\+Counter@{score\+Counter}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{score\+Counter()}{scoreCounter()}}
+{\footnotesize\ttfamily void score\+Counter (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Updates score bitmaps with its value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{group___graphics_ga60fea1793f63faa9ab7db42296e3d8a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___graphics_gad894cc2aa0d11dd0d068a26a970568c0}\label{group___graphics_gad894cc2aa0d11dd0d068a26a970568c0}} 
+\index{Graphics@{Graphics}!seconds\+Left@{seconds\+Left}}
+\index{seconds\+Left@{seconds\+Left}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{seconds\+Left()}{secondsLeft()}}
+{\footnotesize\ttfamily int seconds\+Left (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Calculates the number of seconds until the next minute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of seconds until the next minute 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___graphics_gacffa4b2e3dcebc554a5c24dec748eb04}\label{group___graphics_gacffa4b2e3dcebc554a5c24dec748eb04}} 
+\index{Graphics@{Graphics}!update\+Date\+Hour@{update\+Date\+Hour}}
+\index{update\+Date\+Hour@{update\+Date\+Hour}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{update\+Date\+Hour()}{updateDateHour()}}
+{\footnotesize\ttfamily void update\+Date\+Hour (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Extracts date and hour from the R\+TC. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___graphics_gacffa4b2e3dcebc554a5c24dec748eb04_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___graphics_gae5f0e30e1262615f852a85d4db3c8261}\label{group___graphics_gae5f0e30e1262615f852a85d4db3c8261}} 
+\index{Graphics@{Graphics}!update\+Frame@{update\+Frame}}
+\index{update\+Frame@{update\+Frame}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{update\+Frame()}{updateFrame()}}
+{\footnotesize\ttfamily void update\+Frame (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game,  }\item[{\hyperlink{struct_states}{States} $\ast$}]{game\+States }\end{DoxyParamCaption})}
+
+
+
+Updates every bitmap to the next positions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+{\em game\+States} & the struct with the current states in the two state machines \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___graphics_gae5f0e30e1262615f852a85d4db3c8261_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group___graphics_ga5b8079ec1b1df7ef0f8f93056f52b221}\label{group___graphics_ga5b8079ec1b1df7ef0f8f93056f52b221}} 
+\index{Graphics@{Graphics}!ball@{ball}}
+\index{ball@{ball}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{ball}{ball}}
+{\footnotesize\ttfamily \hyperlink{struct_snow}{Snow} ball\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the snow ball obstacle 
+
+\mbox{\Hypertarget{group___graphics_gaba4d7c50cbd75917285fd6c4ec1c1c10}\label{group___graphics_gaba4d7c50cbd75917285fd6c4ec1c1c10}} 
+\index{Graphics@{Graphics}!candy\+Cane@{candy\+Cane}}
+\index{candy\+Cane@{candy\+Cane}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{candy\+Cane}{candyCane}}
+{\footnotesize\ttfamily \hyperlink{struct_cane}{Cane} candy\+Cane\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the candy cane obstacle 
+
+\mbox{\Hypertarget{group___graphics_ga6e84b95e51e590713cb4891fbe59ea3b}\label{group___graphics_ga6e84b95e51e590713cb4891fbe59ea3b}} 
+\index{Graphics@{Graphics}!clouds@{clouds}}
+\index{clouds@{clouds}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{clouds}{clouds}}
+{\footnotesize\ttfamily \hyperlink{struct_clouds}{Clouds} clouds\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the first set of clouds 
+
+\mbox{\Hypertarget{group___graphics_gad6ab919c4fef2f8337350a9ce79299a9}\label{group___graphics_gad6ab919c4fef2f8337350a9ce79299a9}} 
+\index{Graphics@{Graphics}!clouds2@{clouds2}}
+\index{clouds2@{clouds2}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{clouds2}{clouds2}}
+{\footnotesize\ttfamily \hyperlink{struct_clouds}{Clouds} clouds2\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the second set of clouds 
+
+\mbox{\Hypertarget{group___graphics_ga94449fd3ac7dc9c0f223ad7cab4d7287}\label{group___graphics_ga94449fd3ac7dc9c0f223ad7cab4d7287}} 
+\index{Graphics@{Graphics}!countdown@{countdown}}
+\index{countdown@{countdown}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{countdown}{countdown}}
+{\footnotesize\ttfamily \hyperlink{struct_countdown}{Countdown} countdown\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents countdown until christmas 
+
+\mbox{\Hypertarget{group___graphics_ga37faf6b2351ee87a7ab6f3ea9c2a02f4}\label{group___graphics_ga37faf6b2351ee87a7ab6f3ea9c2a02f4}} 
+\index{Graphics@{Graphics}!dplayer@{dplayer}}
+\index{dplayer@{dplayer}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{dplayer}{dplayer}}
+{\footnotesize\ttfamily \hyperlink{struct_down_character}{Down\+Character} dplayer\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the character when it\textquotesingle{}s down 
+
+\mbox{\Hypertarget{group___graphics_ga8e77a1d25d66a81c79d37786002474c5}\label{group___graphics_ga8e77a1d25d66a81c79d37786002474c5}} 
+\index{Graphics@{Graphics}!game\+Score@{game\+Score}}
+\index{game\+Score@{game\+Score}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{game\+Score}{gameScore}}
+{\footnotesize\ttfamily \hyperlink{struct_score}{Score} game\+Score\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the score of the game 
+
+\mbox{\Hypertarget{group___graphics_ga07faa847230d0abd8c3db00e3f8cae7a}\label{group___graphics_ga07faa847230d0abd8c3db00e3f8cae7a}} 
+\index{Graphics@{Graphics}!mouse@{mouse}}
+\index{mouse@{mouse}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \hyperlink{struct_mouse}{Mouse} mouse\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the mouse cursor 
+
+\mbox{\Hypertarget{group___graphics_ga98e0c9c163d4fadfce76eebf07b783bf}\label{group___graphics_ga98e0c9c163d4fadfce76eebf07b783bf}} 
+\index{Graphics@{Graphics}!pine@{pine}}
+\index{pine@{pine}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{pine}{pine}}
+{\footnotesize\ttfamily \hyperlink{struct_tree}{Tree} pine\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the pines obstacle 
+
+\mbox{\Hypertarget{group___graphics_ga34de8a6bdc6062347016b82e556b42a7}\label{group___graphics_ga34de8a6bdc6062347016b82e556b42a7}} 
+\index{Graphics@{Graphics}!plaque@{plaque}}
+\index{plaque@{plaque}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{plaque}{plaque}}
+{\footnotesize\ttfamily \hyperlink{struct_plaque}{Plaque} plaque\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the plaque in choose your character menu 
+
+\mbox{\Hypertarget{group___graphics_ga6be64c98dff07b5401940d55c9f75d83}\label{group___graphics_ga6be64c98dff07b5401940d55c9f75d83}} 
+\index{Graphics@{Graphics}!player@{player}}
+\index{player@{player}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \hyperlink{struct_character}{Character} player\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the character when it\textquotesingle{}s up 
+
+\mbox{\Hypertarget{group___graphics_ga6f8fa1a6c397b5d7b17fc82133bfa3d4}\label{group___graphics_ga6f8fa1a6c397b5d7b17fc82133bfa3d4}} 
+\index{Graphics@{Graphics}!present@{present}}
+\index{present@{present}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{present}{present}}
+{\footnotesize\ttfamily \hyperlink{struct_gift}{Gift} present\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+represents the gift obstacle 
+

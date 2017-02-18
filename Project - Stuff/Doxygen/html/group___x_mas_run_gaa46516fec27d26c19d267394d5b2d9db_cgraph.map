@@ -1,0 +1,4 @@
+<map id="kbdManager" name="kbdManager">
+<area shape="rect" id="node2" href="$group___state_machine.html#ga721160d2b84b87f2f8a78aa35978eb59" title="Updates the state related to the menu. " alt="" coords="147,5,243,32"/>
+<area shape="rect" id="node3" href="$group___state_machine.html#ga993a672fc77bafce6ec7ef9db4008071" title="Updates the state related to the character. " alt="" coords="147,56,242,83"/>
+</map>

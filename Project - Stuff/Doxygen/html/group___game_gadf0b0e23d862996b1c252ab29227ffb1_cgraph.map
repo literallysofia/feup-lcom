@@ -1,0 +1,12 @@
+<map id="startGame" name="startGame">
+<area shape="rect" id="node2" href="$group___timer.html#ga4c5d9f47323eda494cfd826f6d62eec9" title="Subscribes and enables Timer 0 interrupts. " alt="" coords="141,5,276,32"/>
+<area shape="rect" id="node3" href="$group___mouse.html#ga99506573209b197b84ee22a228b89fbd" title="Subscribes and enables mouse interrupts. " alt="" coords="136,56,281,83"/>
+<area shape="rect" id="node4" href="$group___mouse.html#ga4f52e05e730b3482a7b249d818b816b1" title="Calls mouse_Writer, used to send the cmd to write in the mouse. " alt="" coords="153,107,264,133"/>
+<area shape="rect" id="node7" href="$group___mouse.html#gad7c890a972e1f92e3a494d356795a103" title="Writes in the mouse, verifying the ACK of the mouse. " alt="" coords="162,157,255,184"/>
+<area shape="rect" id="node9" href="$group___keyboard.html#gaa446b75f68daaa0d8af27bad682c3c45" title="Cleans the output of the keyboard buffer. " alt="" coords="333,208,425,235"/>
+<area shape="rect" id="node10" href="$group___keyboard.html#gafba3a35bd6a79305e84ab4f33a5ffa7f" title="Subscribes keyboard interrupts. " alt="" coords="145,259,272,285"/>
+<area shape="rect" id="node11" href="$group___bitmap.html#ga3506880ffd407c36eb8aaddd2c1606d2" title="Loads a bmp image. " alt="" coords="165,309,252,336"/>
+<area shape="rect" id="node5" href="$group___mouse.html#gae7c331cf6f4c63d80b6bce11c2c8e771" title="Writes in the mouse. " alt="" coords="329,107,428,133"/>
+<area shape="rect" id="node6" href="$group___keyboard.html#gabb9ee10191569258e0f22bdd0a95ba62" title="Waits 20 microseconds. " alt="" coords="476,157,529,184"/>
+<area shape="rect" id="node8" href="$group___mouse.html#gaad10b68ed5addb9bd150288dd869d586" title="Reads the output buffer. " alt="" coords="329,157,428,184"/>
+</map>

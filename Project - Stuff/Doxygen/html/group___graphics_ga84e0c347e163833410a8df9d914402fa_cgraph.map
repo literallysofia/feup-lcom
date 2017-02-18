@@ -1,0 +1,7 @@
+<map id="countDown" name="countDown">
+<area shape="rect" id="node2" href="$group___graphics.html#ga16779210d6883bbec22aaed4546c2738" title="Counts how many days there is until Christmas. " alt="" coords="151,5,221,32"/>
+<area shape="rect" id="node4" href="$group___graphics.html#gaa4e1ad5e2668cefab925f9151e82cf56" title="Calculates the number of hours until the next day. " alt="" coords="149,56,223,83"/>
+<area shape="rect" id="node5" href="$group___graphics.html#ga9c96c725c4779f2b277be96d399752c0" title="Calculates the number of minutes until the next hour. " alt="" coords="141,107,231,133"/>
+<area shape="rect" id="node6" href="$group___graphics.html#gad894cc2aa0d11dd0d068a26a970568c0" title="Calculates the number of seconds until the next minute. " alt="" coords="140,157,232,184"/>
+<area shape="rect" id="node3" href="$group___graphics.html#ga0e4bd2e0f0b7e0074f5c00a2373ef7b8" title="Calculates the number of days from 1/1/0001 until the date passed in the arguments. " alt="" coords="280,5,320,32"/>
+</map>

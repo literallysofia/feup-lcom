@@ -1,0 +1,13 @@
+\hypertarget{bitmap_8c}{}\section{bitmap.\+c File Reference}
+\label{bitmap_8c}\index{bitmap.\+c@{bitmap.\+c}}
+{\ttfamily \#include \char`\"{}bitmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+gr.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}{load\+Bitmap} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads a bmp image. \end{DoxyCompactList}\item 
+void \hyperlink{group___bitmap_ga9d23448e26cd2737b2dff4df6e886f79}{draw\+Bitmap} (char $\ast$vm, \hyperlink{struct_bitmap}{Bitmap} $\ast$bmp, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draws an unscaled, unrotated bitmap at the given position. \end{DoxyCompactList}\item 
+void \hyperlink{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}{delete\+Bitmap} (\hyperlink{struct_bitmap}{Bitmap} $\ast$bmp)
+\begin{DoxyCompactList}\small\item\em Destroys the given bitmap, freeing all resources used by it. \end{DoxyCompactList}\end{DoxyCompactItemize}

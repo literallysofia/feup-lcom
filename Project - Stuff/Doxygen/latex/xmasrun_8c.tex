@@ -1,0 +1,18 @@
+\hypertarget{xmasrun_8c}{}\section{xmasrun.\+c File Reference}
+\label{xmasrun_8c}\index{xmasrun.\+c@{xmasrun.\+c}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}xmasrun.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___x_mas_run_gaa46516fec27d26c19d267394d5b2d9db}{kbd\+Manager} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Handles everything related to the keyboard interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___x_mas_run_gaa7d8686bcb6a92421aeba74757c6cabb}{time\+Manager} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Handles everything related to the timer interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___x_mas_run_ga1b1dcdb3762a6408c2b5ad053e0848eb}{mouse\+Manager} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Handles everything related to the mouse interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}

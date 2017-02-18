@@ -1,0 +1,119 @@
+\hypertarget{group___r_t_c}{}\section{R\+TC}
+\label{group___r_t_c}\index{R\+TC@{R\+TC}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___r_t_c_gaa2b091a9cf7dce22b896bb1f041b3e2f}{is\+R\+T\+C\+Updating} ()
+\begin{DoxyCompactList}\small\item\em Checks if the rtc is updating, verifying the U\+IP in Register A. \end{DoxyCompactList}\item 
+int \hyperlink{group___r_t_c_gadc99d6e13380791f37d25254f382185b}{is\+B\+CD} ()
+\begin{DoxyCompactList}\small\item\em Checks if the values given by the R\+TC are in B\+CD, verifying the DM in Register B. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{group___r_t_c_gac415cba00d3b076015e540f85de75b45}{B\+C\+Dto\+Binary} (unsigned long $\ast$bcd)
+\begin{DoxyCompactList}\small\item\em Converts values from bcd to binary. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga151db8d516dd649f8d14dab18be79882}{get\+Date} (unsigned long $\ast$day, unsigned long $\ast$month, unsigned long $\ast$year)
+\begin{DoxyCompactList}\small\item\em Gets the current date from the R\+TC in binary. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga87be9dbdb025ecbb1bd326713842f043}{get\+Hour} (unsigned long $\ast$hour, unsigned long $\ast$minutes, unsigned long $\ast$seconds)
+\begin{DoxyCompactList}\small\item\em Gets the current hour from the R\+TC in binary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___r_t_c_gac415cba00d3b076015e540f85de75b45}\label{group___r_t_c_gac415cba00d3b076015e540f85de75b45}} 
+\index{R\+TC@{R\+TC}!B\+C\+Dto\+Binary@{B\+C\+Dto\+Binary}}
+\index{B\+C\+Dto\+Binary@{B\+C\+Dto\+Binary}!R\+TC@{R\+TC}}
+\subsubsection{\texorpdfstring{B\+C\+Dto\+Binary()}{BCDtoBinary()}}
+{\footnotesize\ttfamily unsigned long B\+C\+Dto\+Binary (\begin{DoxyParamCaption}\item[{unsigned long $\ast$}]{bcd }\end{DoxyParamCaption})}
+
+
+
+Converts values from bcd to binary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bcd} & value in bcd to be converted in binary \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value in binary 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___r_t_c_ga151db8d516dd649f8d14dab18be79882}\label{group___r_t_c_ga151db8d516dd649f8d14dab18be79882}} 
+\index{R\+TC@{R\+TC}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!R\+TC@{R\+TC}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}}
+{\footnotesize\ttfamily void get\+Date (\begin{DoxyParamCaption}\item[{unsigned long $\ast$}]{day,  }\item[{unsigned long $\ast$}]{month,  }\item[{unsigned long $\ast$}]{year }\end{DoxyParamCaption})}
+
+
+
+Gets the current date from the R\+TC in binary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & will be updated by the R\+TC \\
+\hline
+{\em month} & will be updated by the R\+TC \\
+\hline
+{\em year} & will be updated by the R\+TC \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{group___r_t_c_ga151db8d516dd649f8d14dab18be79882_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___r_t_c_ga87be9dbdb025ecbb1bd326713842f043}\label{group___r_t_c_ga87be9dbdb025ecbb1bd326713842f043}} 
+\index{R\+TC@{R\+TC}!get\+Hour@{get\+Hour}}
+\index{get\+Hour@{get\+Hour}!R\+TC@{R\+TC}}
+\subsubsection{\texorpdfstring{get\+Hour()}{getHour()}}
+{\footnotesize\ttfamily void get\+Hour (\begin{DoxyParamCaption}\item[{unsigned long $\ast$}]{hour,  }\item[{unsigned long $\ast$}]{minutes,  }\item[{unsigned long $\ast$}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Gets the current hour from the R\+TC in binary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hour} & will be updated by the R\+TC \\
+\hline
+{\em minutes} & will be updated by the R\+TC \\
+\hline
+{\em seconds} & will be updated by the R\+TC \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{group___r_t_c_ga87be9dbdb025ecbb1bd326713842f043_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___r_t_c_gadc99d6e13380791f37d25254f382185b}\label{group___r_t_c_gadc99d6e13380791f37d25254f382185b}} 
+\index{R\+TC@{R\+TC}!is\+B\+CD@{is\+B\+CD}}
+\index{is\+B\+CD@{is\+B\+CD}!R\+TC@{R\+TC}}
+\subsubsection{\texorpdfstring{is\+B\+C\+D()}{isBCD()}}
+{\footnotesize\ttfamily int is\+B\+CD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the values given by the R\+TC are in B\+CD, verifying the DM in Register B. 
+
+\begin{DoxyReturn}{Returns}
+1 if the values are in bcd, 0 if they are in binary 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___r_t_c_gaa2b091a9cf7dce22b896bb1f041b3e2f}\label{group___r_t_c_gaa2b091a9cf7dce22b896bb1f041b3e2f}} 
+\index{R\+TC@{R\+TC}!is\+R\+T\+C\+Updating@{is\+R\+T\+C\+Updating}}
+\index{is\+R\+T\+C\+Updating@{is\+R\+T\+C\+Updating}!R\+TC@{R\+TC}}
+\subsubsection{\texorpdfstring{is\+R\+T\+C\+Updating()}{isRTCUpdating()}}
+{\footnotesize\ttfamily int is\+R\+T\+C\+Updating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the rtc is updating, verifying the U\+IP in Register A. 
+
+\begin{DoxyReturn}{Returns}
+1 if the rtc is updating, 0 if it\textquotesingle{}s not 
+\end{DoxyReturn}

@@ -1,0 +1,20 @@
+\hypertarget{game_8h}{}\section{game.\+h File Reference}
+\label{game_8h}\index{game.\+h@{game.\+h}}
+{\ttfamily \#include \char`\"{}state\+Machine.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bitmap.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_game}{Game}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_game}{Game} $\ast$ \hyperlink{group___game_gadf0b0e23d862996b1c252ab29227ffb1}{start\+Game} ()
+\begin{DoxyCompactList}\small\item\em Subscribes timer, mouse and keyboard. Loads all bitmaps to the right member in game struct. Alocates space for the date and hour. \end{DoxyCompactList}\item 
+void \hyperlink{group___game_ga5f4dcc9f4534fe0b6c73f105705434f8}{interrupt\+Handler} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Handles the interrups from timer, keyboard and mouse. \end{DoxyCompactList}\item 
+void \hyperlink{group___game_gac69172228ce6b7881580536187b0ce82}{delete\+Bitmaps} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Deletes all bitmaps. \end{DoxyCompactList}\item 
+void \hyperlink{group___game_ga6fcaca11a4e0464324d12d8995454396}{leave\+Game} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em unsubscribes the timer, keyboard and mouse, calls delete\+Bitmaps and frees all the allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}

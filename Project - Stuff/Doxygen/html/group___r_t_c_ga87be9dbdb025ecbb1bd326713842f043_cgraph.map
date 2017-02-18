@@ -1,0 +1,4 @@
+<map id="getHour" name="getHour">
+<area shape="rect" id="node2" href="$group___r_t_c.html#gadc99d6e13380791f37d25254f382185b" title="Checks if the values given by the RTC are in BCD, verifying the DM in Register B. ..." alt="" coords="139,5,198,32"/>
+<area shape="rect" id="node3" href="$group___r_t_c.html#gac415cba00d3b076015e540f85de75b45" title="Converts values from bcd to binary. " alt="" coords="120,56,217,83"/>
+</map>

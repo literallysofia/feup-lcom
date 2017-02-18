@@ -1,0 +1,96 @@
+\hypertarget{group___keyboard}{}\section{Keyboard}
+\label{group___keyboard}\index{Keyboard@{Keyboard}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___keyboard_gafba3a35bd6a79305e84ab4f33a5ffa7f}{kbd\+\_\+subscribe\+\_\+int} (void)
+\begin{DoxyCompactList}\small\item\em Subscribes keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group___keyboard_ga5bdf6cfb570c375192b0d87913b65c57}{kbd\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group___keyboard_ga7038ddb0c35ef732a786679094a9de0e}{read\+Data} ()
+\begin{DoxyCompactList}\small\item\em Gets the scan code read from the keyboard. \end{DoxyCompactList}\item 
+void \hyperlink{group___keyboard_gaa446b75f68daaa0d8af27bad682c3c45}{kbd\+\_\+discard} ()
+\begin{DoxyCompactList}\small\item\em Cleans the output of the keyboard buffer. \end{DoxyCompactList}\item 
+void \hyperlink{group___keyboard_gabb9ee10191569258e0f22bdd0a95ba62}{delay} ()
+\begin{DoxyCompactList}\small\item\em Waits 20 microseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___keyboard_gabb9ee10191569258e0f22bdd0a95ba62}\label{group___keyboard_gabb9ee10191569258e0f22bdd0a95ba62}} 
+\index{Keyboard@{Keyboard}!delay@{delay}}
+\index{delay@{delay}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily void delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Waits 20 microseconds. 
+
+\mbox{\Hypertarget{group___keyboard_gaa446b75f68daaa0d8af27bad682c3c45}\label{group___keyboard_gaa446b75f68daaa0d8af27bad682c3c45}} 
+\index{Keyboard@{Keyboard}!kbd\+\_\+discard@{kbd\+\_\+discard}}
+\index{kbd\+\_\+discard@{kbd\+\_\+discard}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{kbd\+\_\+discard()}{kbd\_discard()}}
+{\footnotesize\ttfamily void kbd\+\_\+discard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cleans the output of the keyboard buffer. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{group___keyboard_gaa446b75f68daaa0d8af27bad682c3c45_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___keyboard_gafba3a35bd6a79305e84ab4f33a5ffa7f}\label{group___keyboard_gafba3a35bd6a79305e84ab4f33a5ffa7f}} 
+\index{Keyboard@{Keyboard}!kbd\+\_\+subscribe\+\_\+int@{kbd\+\_\+subscribe\+\_\+int}}
+\index{kbd\+\_\+subscribe\+\_\+int@{kbd\+\_\+subscribe\+\_\+int}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{kbd\+\_\+subscribe\+\_\+int()}{kbd\_subscribe\_int()}}
+{\footnotesize\ttfamily int kbd\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns bit order in interrupt mask; negative value on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___keyboard_ga5bdf6cfb570c375192b0d87913b65c57}\label{group___keyboard_ga5bdf6cfb570c375192b0d87913b65c57}} 
+\index{Keyboard@{Keyboard}!kbd\+\_\+unsubscribe\+\_\+int@{kbd\+\_\+unsubscribe\+\_\+int}}
+\index{kbd\+\_\+unsubscribe\+\_\+int@{kbd\+\_\+unsubscribe\+\_\+int}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{kbd\+\_\+unsubscribe\+\_\+int()}{kbd\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int kbd\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___keyboard_ga7038ddb0c35ef732a786679094a9de0e}\label{group___keyboard_ga7038ddb0c35ef732a786679094a9de0e}} 
+\index{Keyboard@{Keyboard}!read\+Data@{read\+Data}}
+\index{read\+Data@{read\+Data}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{read\+Data()}{readData()}}
+{\footnotesize\ttfamily int read\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the scan code read from the keyboard. 
+
+\begin{DoxyReturn}{Returns}
+Returns the scan code read from the keyboard 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{group___keyboard_ga7038ddb0c35ef732a786679094a9de0e_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,53 @@
+\hypertarget{group___timer}{}\section{Timer}
+\label{group___timer}\index{Timer@{Timer}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___timer_ga4c5d9f47323eda494cfd826f6d62eec9}{timer\+\_\+subscribe\+\_\+int} (void)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Timer 0 interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group___timer_gab9eea51549744bca5c5c923b388bb4ee}{timer\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Timer 0 interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___timer_ga10fc9c867b15c7da6649311c9987cd17}{timer\+\_\+int\+\_\+handler} ()
+\begin{DoxyCompactList}\small\item\em Timer 0 interrupt handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for using the i8254 timers 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___timer_ga10fc9c867b15c7da6649311c9987cd17}\label{group___timer_ga10fc9c867b15c7da6649311c9987cd17}} 
+\index{Timer@{Timer}!timer\+\_\+int\+\_\+handler@{timer\+\_\+int\+\_\+handler}}
+\index{timer\+\_\+int\+\_\+handler@{timer\+\_\+int\+\_\+handler}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+int\+\_\+handler()}{timer\_int\_handler()}}
+{\footnotesize\ttfamily void timer\+\_\+int\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Timer 0 interrupt handler. 
+
+Increments counter \mbox{\Hypertarget{group___timer_ga4c5d9f47323eda494cfd826f6d62eec9}\label{group___timer_ga4c5d9f47323eda494cfd826f6d62eec9}} 
+\index{Timer@{Timer}!timer\+\_\+subscribe\+\_\+int@{timer\+\_\+subscribe\+\_\+int}}
+\index{timer\+\_\+subscribe\+\_\+int@{timer\+\_\+subscribe\+\_\+int}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+subscribe\+\_\+int()}{timer\_subscribe\_int()}}
+{\footnotesize\ttfamily int timer\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables Timer 0 interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns bit order in interrupt mask; negative value on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___timer_gab9eea51549744bca5c5c923b388bb4ee}\label{group___timer_gab9eea51549744bca5c5c923b388bb4ee}} 
+\index{Timer@{Timer}!timer\+\_\+unsubscribe\+\_\+int@{timer\+\_\+unsubscribe\+\_\+int}}
+\index{timer\+\_\+unsubscribe\+\_\+int@{timer\+\_\+unsubscribe\+\_\+int}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+unsubscribe\+\_\+int()}{timer\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int timer\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes Timer 0 interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}

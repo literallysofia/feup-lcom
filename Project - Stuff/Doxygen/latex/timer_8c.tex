@@ -1,0 +1,36 @@
+\hypertarget{timer_8c}{}\section{timer.\+c File Reference}
+\label{timer_8c}\index{timer.\+c@{timer.\+c}}
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___timer_ga4c5d9f47323eda494cfd826f6d62eec9}{timer\+\_\+subscribe\+\_\+int} (void)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Timer 0 interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group___timer_gab9eea51549744bca5c5c923b388bb4ee}{timer\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Timer 0 interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___timer_ga10fc9c867b15c7da6649311c9987cd17}{timer\+\_\+int\+\_\+handler} ()
+\begin{DoxyCompactList}\small\item\em Timer 0 interrupt handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{timer_8c_a2c605870a4e5975004e2e04a9a033d35}{counter} = 0
+\item 
+static int \hyperlink{timer_8c_a96f78a87d064e47d627d222f67a8d012}{hook\+\_\+id} = 20
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{timer_8c_a2c605870a4e5975004e2e04a9a033d35}\label{timer_8c_a2c605870a4e5975004e2e04a9a033d35}} 
+\index{timer.\+c@{timer.\+c}!counter@{counter}}
+\index{counter@{counter}!timer.\+c@{timer.\+c}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily unsigned long counter = 0}
+
+\mbox{\Hypertarget{timer_8c_a96f78a87d064e47d627d222f67a8d012}\label{timer_8c_a96f78a87d064e47d627d222f67a8d012}} 
+\index{timer.\+c@{timer.\+c}!hook\+\_\+id@{hook\+\_\+id}}
+\index{hook\+\_\+id@{hook\+\_\+id}!timer.\+c@{timer.\+c}}
+\subsubsection{\texorpdfstring{hook\+\_\+id}{hook\_id}}
+{\footnotesize\ttfamily int hook\+\_\+id = 20\hspace{0.3cm}{\ttfamily [static]}}
+

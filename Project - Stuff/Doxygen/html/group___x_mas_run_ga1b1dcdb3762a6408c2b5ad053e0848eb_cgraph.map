@@ -1,0 +1,12 @@
+<map id="mouseManager" name="mouseManager">
+<area shape="rect" id="node2" href="$graphics_8c.html#ab4e9b69ed0ba3bbe963987fdba97956a" title="drawMouse" alt="" coords="187,5,275,32"/>
+<area shape="rect" id="node3" href="$group___graphics.html#gad474a474d64464f56c893125ae05fe15" title="Checks if the player chose an option in the Main Menu. " alt="" coords="173,56,289,83"/>
+<area shape="rect" id="node4" href="$group___state_machine.html#ga721160d2b84b87f2f8a78aa35978eb59" title="Updates the state related to the menu. " alt="" coords="183,107,279,133"/>
+<area shape="rect" id="node5" href="$group___state_machine.html#ga993a672fc77bafce6ec7ef9db4008071" title="Updates the state related to the character. " alt="" coords="183,157,278,184"/>
+<area shape="rect" id="node6" href="$group___graphics.html#ga7b226a076e2fce195972329b07d54956" title="Checks if the player chose an option in the Game Over Menu. " alt="" coords="172,208,289,235"/>
+<area shape="rect" id="node7" href="$group___graphics.html#ga2b9d84216dd1b37a440ca6b71784c2fc" title="Initializes the positions of the gift, the candy cane, the pines, the snowball, the first set of clou..." alt="" coords="189,259,273,285"/>
+<area shape="rect" id="node8" href="$group___graphics.html#gaaa565b7e974eec01db91380f3ba991d2" title="Resets the choose your character plaque back to the default character. Resets the distances (jump and..." alt="" coords="191,309,270,336"/>
+<area shape="rect" id="node9" href="$group___graphics.html#gad55a59d3fd603520980e4794f29e83bd" title="Checks if the player chose an option in the Options Menu. " alt="" coords="164,360,297,387"/>
+<area shape="rect" id="node10" href="$group___graphics.html#gad185badd1bb6af7027ee2fba1539c055" title="Updates the plaque position depending on the player option. If option is 1, the plaque will move to t..." alt="" coords="186,411,275,437"/>
+<area shape="rect" id="node11" href="$group___graphics.html#ga1ff7208d640a7d4c62a49f5f81306be4" title="Updates the character depending on the player option. If option is 1, the character would be the deer..." alt="" coords="180,461,281,488"/>
+</map>

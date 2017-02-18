@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$group__video__gr.html#gacef21667c79365d57a084bed994c2189" title="Initializes the video module in graphics mode. " alt="" coords="136,81,195,108"/>
+<area shape="rect" id="node4" href="$group___game.html#gadf0b0e23d862996b1c252ab29227ffb1" title="Subscribes timer, mouse and keyboard. Loads all bitmaps to the right member in game struct..." alt="" coords="124,233,207,260"/>
+<area shape="rect" id="node15" href="$group___state_machine.html#ga1b7814c2c4e8169a8561d47554c0639e" title="Initializes both state machines. " alt="" coords="106,791,225,817"/>
+<area shape="rect" id="node16" href="$group___graphics.html#gabde7c0fefaf3424db78158c805037cd3" title="Resets the plaque and the character to the default. " alt="" coords="117,841,214,868"/>
+<area shape="rect" id="node17" href="$group___graphics.html#ga16103b3c6b6139878e7c3de81cf56925" title="Initializes the position of the mouse cursor. " alt="" coords="104,892,227,919"/>
+<area shape="rect" id="node18" href="$group___game.html#ga5f4dcc9f4534fe0b6c73f105705434f8" title="Handles the interrups from timer, keyboard and mouse. " alt="" coords="109,740,222,767"/>
+<area shape="rect" id="node43" href="$group___game.html#ga6fcaca11a4e0464324d12d8995454396" title="unsubscribes the timer, keyboard and mouse, calls deleteBitmaps and frees all the allocated memory..." alt="" coords="122,1145,209,1172"/>
+<area shape="rect" id="node50" href="$group__video__gr.html#ga42f593e6656f1a978315aff02b1bcebf" title="Returns to default Minix 3 text mode (0x03: 25 x 80, 16 colors) " alt="" coords="134,1196,197,1223"/>
+<area shape="rect" id="node3" href="$group___v_b_e.html#ga4ef3234e41f2050bc094a22049b69e45" title="Returns information on the input VBE mode, including screen dimensions, color depth and VRAM physical..." alt="" coords="288,5,420,32"/>
+<area shape="rect" id="node5" href="$group___timer.html#ga4c5d9f47323eda494cfd826f6d62eec9" title="Subscribes and enables Timer 0 interrupts. " alt="" coords="287,157,421,184"/>
+<area shape="rect" id="node6" href="$group___mouse.html#ga99506573209b197b84ee22a228b89fbd" title="Subscribes and enables mouse interrupts. " alt="" coords="281,208,427,235"/>
+<area shape="rect" id="node7" href="$group___mouse.html#ga4f52e05e730b3482a7b249d818b816b1" title="Calls mouse_Writer, used to send the cmd to write in the mouse. " alt="" coords="299,309,409,336"/>
+<area shape="rect" id="node10" href="$group___mouse.html#gad7c890a972e1f92e3a494d356795a103" title="Writes in the mouse, verifying the ACK of the mouse. " alt="" coords="307,360,401,387"/>
+<area shape="rect" id="node12" href="$group___keyboard.html#gaa446b75f68daaa0d8af27bad682c3c45" title="Cleans the output of the keyboard buffer. " alt="" coords="308,259,400,285"/>
+<area shape="rect" id="node13" href="$group___keyboard.html#gafba3a35bd6a79305e84ab4f33a5ffa7f" title="Subscribes keyboard interrupts. " alt="" coords="291,56,417,83"/>
+<area shape="rect" id="node14" href="$group___bitmap.html#ga3506880ffd407c36eb8aaddd2c1606d2" title="Loads a bmp image. " alt="" coords="311,107,397,133"/>
+<area shape="rect" id="node8" href="$group___mouse.html#gae7c331cf6f4c63d80b6bce11c2c8e771" title="Writes in the mouse. " alt="" coords="499,309,597,336"/>
+<area shape="rect" id="node9" href="$group___keyboard.html#gabb9ee10191569258e0f22bdd0a95ba62" title="Waits 20 microseconds. " alt="" coords="663,335,716,361"/>
+<area shape="rect" id="node11" href="$group___mouse.html#gaad10b68ed5addb9bd150288dd869d586" title="Reads the output buffer. " alt="" coords="499,360,597,387"/>
+<area shape="rect" id="node19" href="$group___x_mas_run.html#gaa7d8686bcb6a92421aeba74757c6cabb" title="Handles everything related to the timer interrupts. " alt="" coords="305,1044,403,1071"/>
+<area shape="rect" id="node34" href="$group___keyboard.html#ga7038ddb0c35ef732a786679094a9de0e" title="Gets the scan code read from the keyboard. " alt="" coords="317,537,391,564"/>
+<area shape="rect" id="node35" href="$group___x_mas_run.html#gaa46516fec27d26c19d267394d5b2d9db" title="Handles everything related to the keyboard interrupts. " alt="" coords="307,765,401,792"/>
+<area shape="rect" id="node36" href="$group___x_mas_run.html#ga1b1dcdb3762a6408c2b5ad053e0848eb" title="Handles everything related to the mouse interrupts. " alt="" coords="299,715,409,741"/>
+<area shape="rect" id="node20" href="$group___graphics.html#gacffa4b2e3dcebc554a5c24dec748eb04" title="Extracts date and hour from the RTC. " alt="" coords="491,1120,605,1147"/>
+<area shape="rect" id="node21" href="$group___graphics.html#ga84e0c347e163833410a8df9d914402fa" title="Updates the value of the days, hours, minutes and seconds of the countdown. " alt="" coords="505,1171,591,1197"/>
+<area shape="rect" id="node22" href="$group___graphics.html#gaadff1c974f62a2b8f18fde71535809fb" title="Updates the bitmaps of the countdown. " alt="" coords="491,1221,605,1248"/>
+<area shape="rect" id="node23" href="$group___graphics.html#ga2b9d84216dd1b37a440ca6b71784c2fc" title="Initializes the positions of the gift, the candy cane, the pines, the snowball, the first set of clou..." alt="" coords="506,917,590,944"/>
+<area shape="rect" id="node24" href="$group___graphics.html#gaaa565b7e974eec01db91380f3ba991d2" title="Resets the choose your character plaque back to the default character. Resets the distances (jump and..." alt="" coords="509,867,587,893"/>
+<area shape="rect" id="node25" href="$group___graphics.html#gae5f0e30e1262615f852a85d4db3c8261" title="Updates every bitmap to the next positions. " alt="" coords="499,1272,597,1299"/>
+<area shape="rect" id="node26" href="$group___graphics.html#ga307c4ac67d1d0316a5e01620930504c5" title="Updates the character position when it jumps. " alt="" coords="523,1323,573,1349"/>
+<area shape="rect" id="node27" href="$group___state_machine.html#ga993a672fc77bafce6ec7ef9db4008071" title="Updates the state related to the character. " alt="" coords="501,765,595,792"/>
+<area shape="rect" id="node28" href="$group___graphics.html#ga84ffc930c9e1c8c6de9173eadd3c975d" title="Updates the character position when it gets down. " alt="" coords="507,1373,589,1400"/>
+<area shape="rect" id="node29" href="$group___graphics.html#gab2dd31b45cae53400c50cc728db456ca" title="Updates the obstacles positions ang gets the next set of obstacles ready which is chosen randomly out..." alt="" coords="529,1424,567,1451"/>
+<area shape="rect" id="node30" href="$group___graphics.html#ga60fea1793f63faa9ab7db42296e3d8a7" title="Updates score bitmaps with its value. " alt="" coords="499,968,597,995"/>
+<area shape="rect" id="node31" href="$group___graphics.html#ga9c0ab323b39cd0254dbfdaa80dcac495" title="Checks if there&#39;s a collision betwwen the character and the obstacles. " alt="" coords="513,1019,583,1045"/>
+<area shape="rect" id="node32" href="$group___state_machine.html#ga721160d2b84b87f2f8a78aa35978eb59" title="Updates the state related to the menu. " alt="" coords="500,816,596,843"/>
+<area shape="rect" id="node33" href="$group__video__gr.html#ga4f5703f9b121dc5e85673680a1082c7d" title="copies what&#39;s in the double buffer to the video mem. " alt="" coords="513,1069,583,1096"/>
+<area shape="rect" id="node37" href="$graphics_8c.html#ab4e9b69ed0ba3bbe963987fdba97956a" title="drawMouse" alt="" coords="504,512,592,539"/>
+<area shape="rect" id="node38" href="$group___graphics.html#gad474a474d64464f56c893125ae05fe15" title="Checks if the player chose an option in the Main Menu. " alt="" coords="490,563,606,589"/>
+<area shape="rect" id="node39" href="$group___graphics.html#ga7b226a076e2fce195972329b07d54956" title="Checks if the player chose an option in the Game Over Menu. " alt="" coords="489,613,607,640"/>
+<area shape="rect" id="node40" href="$group___graphics.html#gad55a59d3fd603520980e4794f29e83bd" title="Checks if the player chose an option in the Options Menu. " alt="" coords="481,664,615,691"/>
+<area shape="rect" id="node41" href="$group___graphics.html#gad185badd1bb6af7027ee2fba1539c055" title="Updates the plaque position depending on the player option. If option is 1, the plaque will move to t..." alt="" coords="503,715,593,741"/>
+<area shape="rect" id="node42" href="$group___graphics.html#ga1ff7208d640a7d4c62a49f5f81306be4" title="Updates the character depending on the player option. If option is 1, the character would be the deer..." alt="" coords="497,461,599,488"/>
+<area shape="rect" id="node44" href="$group___timer.html#gab9eea51549744bca5c5c923b388bb4ee" title="Unsubscribes Timer 0 interrupts. " alt="" coords="279,1196,429,1223"/>
+<area shape="rect" id="node45" href="$group___keyboard.html#ga5bdf6cfb570c375192b0d87913b65c57" title="Unsubscribes keyboard interrupts. " alt="" coords="283,1247,425,1273"/>
+<area shape="rect" id="node46" href="$group___mouse.html#ga685ad2706aca36d9869a30a19b9f446a" title="Unsubscribes mouse interrupts. " alt="" coords="275,1297,433,1324"/>
+<area shape="rect" id="node47" href="$group___game.html#gac69172228ce6b7881580536187b0ce82" title="Deletes all bitmaps. " alt="" coords="301,1095,407,1121"/>
+<area shape="rect" id="node49" href="$group___state_machine.html#gad70668a1c3bdf581906790c7e7da0409" title="Frees the space allocated for the state machine. " alt="" coords="289,1145,419,1172"/>
+<area shape="rect" id="node48" href="$group___bitmap.html#ga08c1d4f4fff81df260d979ea8fc1aa61" title="Destroys the given bitmap, freeing all resources used by it. " alt="" coords="499,1475,597,1501"/>
+</map>

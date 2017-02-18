@@ -1,0 +1,34 @@
+\hypertarget{keyboard_8c}{}\section{keyboard.\+c File Reference}
+\label{keyboard_8c}\index{keyboard.\+c@{keyboard.\+c}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___keyboard_gafba3a35bd6a79305e84ab4f33a5ffa7f}{kbd\+\_\+subscribe\+\_\+int} (void)
+\begin{DoxyCompactList}\small\item\em Subscribes keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group___keyboard_ga5bdf6cfb570c375192b0d87913b65c57}{kbd\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes keyboard interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___keyboard_gabb9ee10191569258e0f22bdd0a95ba62}{delay} ()
+\begin{DoxyCompactList}\small\item\em Waits 20 microseconds. \end{DoxyCompactList}\item 
+int \hyperlink{group___keyboard_ga7038ddb0c35ef732a786679094a9de0e}{read\+Data} ()
+\begin{DoxyCompactList}\small\item\em Gets the scan code read from the keyboard. \end{DoxyCompactList}\item 
+void \hyperlink{group___keyboard_gaa446b75f68daaa0d8af27bad682c3c45}{kbd\+\_\+discard} ()
+\begin{DoxyCompactList}\small\item\em Cleans the output of the keyboard buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{keyboard_8c_a55decc8d006d92179f8fa6a3a8a7f2ab}{kbd\+\_\+hookid} = 10
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{keyboard_8c_a55decc8d006d92179f8fa6a3a8a7f2ab}\label{keyboard_8c_a55decc8d006d92179f8fa6a3a8a7f2ab}} 
+\index{keyboard.\+c@{keyboard.\+c}!kbd\+\_\+hookid@{kbd\+\_\+hookid}}
+\index{kbd\+\_\+hookid@{kbd\+\_\+hookid}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{kbd\+\_\+hookid}{kbd\_hookid}}
+{\footnotesize\ttfamily int kbd\+\_\+hookid = 10\hspace{0.3cm}{\ttfamily [static]}}
+

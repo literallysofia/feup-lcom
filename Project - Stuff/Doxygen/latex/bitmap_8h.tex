@@ -1,0 +1,43 @@
+\hypertarget{bitmap_8h}{}\section{bitmap.\+h File Reference}
+\label{bitmap_8h}\index{bitmap.\+h@{bitmap.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_bitmap_file_header}{Bitmap\+File\+Header}
+\item 
+struct \hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header}
+\item 
+struct \hyperlink{struct_bitmap}{Bitmap}
+\begin{DoxyCompactList}\small\item\em Represents a \hyperlink{struct_bitmap}{Bitmap}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___bitmap_gabf6f66114c31b8f87c80534ca695a00b}{H\+\_\+\+R\+ES}~1024
+\item 
+\#define \hyperlink{group___bitmap_gaac2466862bcfc18231c38fe1eacc22e3}{V\+\_\+\+R\+ES}~768
+\item 
+\#define \hyperlink{group___bitmap_gada419fe3b48fcf19daed7cc57ccf1174}{P\+I\+NK}~0xfffffff8
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment} \{ \hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a6ec599857e15466988726932dd592305}{A\+L\+I\+G\+N\+\_\+\+L\+E\+FT}, 
+\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a5624165187e56db612253e608a45b1c6}{A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER}, 
+\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a9c81840e8cad46418b39a8b74a246354}{A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}{load\+Bitmap} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads a bmp image. \end{DoxyCompactList}\item 
+void \hyperlink{group___bitmap_ga9d23448e26cd2737b2dff4df6e886f79}{draw\+Bitmap} (char $\ast$vm, \hyperlink{struct_bitmap}{Bitmap} $\ast$bitmap, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draws an unscaled, unrotated bitmap at the given position. \end{DoxyCompactList}\item 
+void \hyperlink{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}{delete\+Bitmap} (\hyperlink{struct_bitmap}{Bitmap} $\ast$bmp)
+\begin{DoxyCompactList}\small\item\em Destroys the given bitmap, freeing all resources used by it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static char \hyperlink{group___bitmap_ga2b225ffd0d59618d1b1fa8396ab6e970}{res\+\_\+path} \mbox{[}$\,$\mbox{]} = \char`\"{}/home/proj/res/\char`\"{}
+\begin{DoxyCompactList}\small\item\em bitmap path \end{DoxyCompactList}\end{DoxyCompactItemize}

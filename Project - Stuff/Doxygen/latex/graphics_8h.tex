@@ -1,0 +1,110 @@
+\hypertarget{graphics_8h}{}\section{graphics.\+h File Reference}
+\label{graphics_8h}\index{graphics.\+h@{graphics.\+h}}
+{\ttfamily \#include \char`\"{}state\+Machine.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bitmap.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_character}{Character}
+\item 
+struct \hyperlink{struct_down_character}{Down\+Character}
+\item 
+struct \hyperlink{struct_cane}{Cane}
+\item 
+struct \hyperlink{struct_gift}{Gift}
+\item 
+struct \hyperlink{struct_snow}{Snow}
+\item 
+struct \hyperlink{struct_tree}{Tree}
+\item 
+struct \hyperlink{struct_clouds}{Clouds}
+\item 
+struct \hyperlink{struct_plaque}{Plaque}
+\item 
+struct \hyperlink{struct_mouse}{Mouse}
+\item 
+struct \hyperlink{struct_score}{Score}
+\item 
+struct \hyperlink{struct_countdown}{Countdown}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___graphics_ga16103b3c6b6139878e7c3de81cf56925}{position\+Mouse\+Init} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Initializes the position of the mouse cursor. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga2b9d84216dd1b37a440ca6b71784c2fc}{position\+Init} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Initializes the positions of the gift, the candy cane, the pines, the snowball, the first set of clouds, the second set of clouds and the game score. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gaaa565b7e974eec01db91380f3ba991d2}{play\+Again} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Resets the choose your character plaque back to the default character. Resets the distances (jump and run distance) back to the default. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gae5f0e30e1262615f852a85d4db3c8261}{update\+Frame} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Updates every bitmap to the next positions. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gabde7c0fefaf3424db78158c805037cd3}{default\+Player} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Resets the plaque and the character to the default. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga1ff7208d640a7d4c62a49f5f81306be4}{change\+Player} (\hyperlink{struct_game}{Game} $\ast$game, int option)
+\begin{DoxyCompactList}\small\item\em Updates the character depending on the player option. If option is 1, the character would be the deer, if 2 the santa claus, if 3 the snowman. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gad185badd1bb6af7027ee2fba1539c055}{draw\+Plaque} (int option)
+\begin{DoxyCompactList}\small\item\em Updates the plaque position depending on the player option. If option is 1, the plaque will move to the deer, if 2 the santa claus, if 3 the snowman. \end{DoxyCompactList}\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{group___graphics_ga2480f417fa8ca1b9b31cf7677dff4541}{number\+To\+Bitmap} (\hyperlink{struct_game}{Game} $\ast$game, int number)
+\begin{DoxyCompactList}\small\item\em Converts the number passed as argument to the right bitmap number. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga60fea1793f63faa9ab7db42296e3d8a7}{score\+Counter} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Updates score bitmaps with its value. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga307c4ac67d1d0316a5e01620930504c5}{jump} ()
+\begin{DoxyCompactList}\small\item\em Updates the character position when it jumps. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga84ffc930c9e1c8c6de9173eadd3c975d}{movedown} ()
+\begin{DoxyCompactList}\small\item\em Updates the character position when it gets down. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gab2dd31b45cae53400c50cc728db456ca}{obj} ()
+\begin{DoxyCompactList}\small\item\em Updates the obstacles positions ang gets the next set of obstacles ready which is chosen randomly out of 3. It\textquotesingle{}s also chosen randomly if there\textquotesingle{}s a snowball in the next set or not. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga9c0ab323b39cd0254dbfdaa80dcac495}{collision} (\hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Checks if there\textquotesingle{}s a collision betwwen the character and the obstacles. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gaab7430a217db9969c46ead48adffbd05}{draw\+Mouse} ()
+\begin{DoxyCompactList}\small\item\em Updates the mouse cursor position. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gad474a474d64464f56c893125ae05fe15}{clicks\+Main\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player chose an option in the Main Menu. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gad55a59d3fd603520980e4794f29e83bd}{clicks\+Options\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player chose an option in the Options Menu. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga7b226a076e2fce195972329b07d54956}{clicks\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player chose an option in the \hyperlink{struct_game}{Game} Over Menu. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gacffa4b2e3dcebc554a5c24dec748eb04}{update\+Date\+Hour} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Extracts date and hour from the R\+TC. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga16779210d6883bbec22aaed4546c2738}{days\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Counts how many days there is until Christmas. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga0e4bd2e0f0b7e0074f5c00a2373ef7b8}{rdn} (unsigned long y, unsigned long m, unsigned long d)
+\begin{DoxyCompactList}\small\item\em Calculates the number of days from 1/1/0001 until the date passed in the arguments. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gad894cc2aa0d11dd0d068a26a970568c0}{seconds\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Calculates the number of seconds until the next minute. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga9c96c725c4779f2b277be96d399752c0}{minutes\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Calculates the number of minutes until the next hour. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gaa4e1ad5e2668cefab925f9151e82cf56}{hours\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Calculates the number of hours until the next day. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga84e0c347e163833410a8df9d914402fa}{count\+Down} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Updates the value of the days, hours, minutes and seconds of the countdown. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gaadff1c974f62a2b8f18fde71535809fb}{count\+Down\+Draw} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Updates the bitmaps of the countdown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_character}{Character} \hyperlink{group___graphics_ga6be64c98dff07b5401940d55c9f75d83}{player}
+\begin{DoxyCompactList}\small\item\em represents the character when it\textquotesingle{}s up \end{DoxyCompactList}\item 
+static \hyperlink{struct_down_character}{Down\+Character} \hyperlink{group___graphics_ga37faf6b2351ee87a7ab6f3ea9c2a02f4}{dplayer}
+\begin{DoxyCompactList}\small\item\em represents the character when it\textquotesingle{}s down \end{DoxyCompactList}\item 
+static \hyperlink{struct_gift}{Gift} \hyperlink{group___graphics_ga6f8fa1a6c397b5d7b17fc82133bfa3d4}{present}
+\begin{DoxyCompactList}\small\item\em represents the gift obstacle \end{DoxyCompactList}\item 
+static \hyperlink{struct_cane}{Cane} \hyperlink{group___graphics_gaba4d7c50cbd75917285fd6c4ec1c1c10}{candy\+Cane}
+\begin{DoxyCompactList}\small\item\em represents the candy cane obstacle \end{DoxyCompactList}\item 
+static \hyperlink{struct_tree}{Tree} \hyperlink{group___graphics_ga98e0c9c163d4fadfce76eebf07b783bf}{pine}
+\begin{DoxyCompactList}\small\item\em represents the pines obstacle \end{DoxyCompactList}\item 
+static \hyperlink{struct_snow}{Snow} \hyperlink{group___graphics_ga5b8079ec1b1df7ef0f8f93056f52b221}{ball}
+\begin{DoxyCompactList}\small\item\em represents the snow ball obstacle \end{DoxyCompactList}\item 
+static \hyperlink{struct_clouds}{Clouds} \hyperlink{group___graphics_ga6e84b95e51e590713cb4891fbe59ea3b}{clouds}
+\begin{DoxyCompactList}\small\item\em represents the first set of clouds \end{DoxyCompactList}\item 
+static \hyperlink{struct_clouds}{Clouds} \hyperlink{group___graphics_gad6ab919c4fef2f8337350a9ce79299a9}{clouds2}
+\begin{DoxyCompactList}\small\item\em represents the second set of clouds \end{DoxyCompactList}\item 
+static \hyperlink{struct_plaque}{Plaque} \hyperlink{group___graphics_ga34de8a6bdc6062347016b82e556b42a7}{plaque}
+\begin{DoxyCompactList}\small\item\em represents the plaque in choose your character menu \end{DoxyCompactList}\item 
+static \hyperlink{struct_score}{Score} \hyperlink{group___graphics_ga8e77a1d25d66a81c79d37786002474c5}{game\+Score}
+\begin{DoxyCompactList}\small\item\em represents the score of the game \end{DoxyCompactList}\item 
+static \hyperlink{struct_countdown}{Countdown} \hyperlink{group___graphics_ga94449fd3ac7dc9c0f223ad7cab4d7287}{countdown}
+\begin{DoxyCompactList}\small\item\em represents countdown until christmas \end{DoxyCompactList}\item 
+static \hyperlink{struct_mouse}{Mouse} \hyperlink{group___graphics_ga07faa847230d0abd8c3db00e3f8cae7a}{mouse}
+\begin{DoxyCompactList}\small\item\em represents the mouse cursor \end{DoxyCompactList}\end{DoxyCompactItemize}

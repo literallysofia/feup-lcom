@@ -1,0 +1,118 @@
+\hypertarget{group___game}{}\section{Game}
+\label{group___game}\index{Game@{Game}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_game}{Game}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_game}{Game} $\ast$ \hyperlink{group___game_gadf0b0e23d862996b1c252ab29227ffb1}{start\+Game} ()
+\begin{DoxyCompactList}\small\item\em Subscribes timer, mouse and keyboard. Loads all bitmaps to the right member in game struct. Alocates space for the date and hour. \end{DoxyCompactList}\item 
+void \hyperlink{group___game_ga5f4dcc9f4534fe0b6c73f105705434f8}{interrupt\+Handler} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Handles the interrups from timer, keyboard and mouse. \end{DoxyCompactList}\item 
+void \hyperlink{group___game_gac69172228ce6b7881580536187b0ce82}{delete\+Bitmaps} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Deletes all bitmaps. \end{DoxyCompactList}\item 
+void \hyperlink{group___game_ga6fcaca11a4e0464324d12d8995454396}{leave\+Game} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em unsubscribes the timer, keyboard and mouse, calls delete\+Bitmaps and frees all the allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___game_gac69172228ce6b7881580536187b0ce82}\label{group___game_gac69172228ce6b7881580536187b0ce82}} 
+\index{Game@{Game}!delete\+Bitmaps@{delete\+Bitmaps}}
+\index{delete\+Bitmaps@{delete\+Bitmaps}!Game@{Game}}
+\subsubsection{\texorpdfstring{delete\+Bitmaps()}{deleteBitmaps()}}
+{\footnotesize\ttfamily void delete\+Bitmaps (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Deletes all bitmaps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{group___game_gac69172228ce6b7881580536187b0ce82_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___game_ga5f4dcc9f4534fe0b6c73f105705434f8}\label{group___game_ga5f4dcc9f4534fe0b6c73f105705434f8}} 
+\index{Game@{Game}!interrupt\+Handler@{interrupt\+Handler}}
+\index{interrupt\+Handler@{interrupt\+Handler}!Game@{Game}}
+\subsubsection{\texorpdfstring{interrupt\+Handler()}{interruptHandler()}}
+{\footnotesize\ttfamily void interrupt\+Handler (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game,  }\item[{\hyperlink{struct_states}{States} $\ast$}]{game\+States }\end{DoxyParamCaption})}
+
+
+
+Handles the interrups from timer, keyboard and mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+{\em game\+States} & the struct with the current states in the two state machines \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___game_ga5f4dcc9f4534fe0b6c73f105705434f8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___game_ga6fcaca11a4e0464324d12d8995454396}\label{group___game_ga6fcaca11a4e0464324d12d8995454396}} 
+\index{Game@{Game}!leave\+Game@{leave\+Game}}
+\index{leave\+Game@{leave\+Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{leave\+Game()}{leaveGame()}}
+{\footnotesize\ttfamily void leave\+Game (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game,  }\item[{\hyperlink{struct_states}{States} $\ast$}]{game\+States }\end{DoxyParamCaption})}
+
+
+
+unsubscribes the timer, keyboard and mouse, calls delete\+Bitmaps and frees all the allocated memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to an object of game struct \\
+\hline
+{\em game\+States} & the struct with the current states in the two state machines \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___game_ga6fcaca11a4e0464324d12d8995454396_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___game_gadf0b0e23d862996b1c252ab29227ffb1}\label{group___game_gadf0b0e23d862996b1c252ab29227ffb1}} 
+\index{Game@{Game}!start\+Game@{start\+Game}}
+\index{start\+Game@{start\+Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{start\+Game()}{startGame()}}
+{\footnotesize\ttfamily \hyperlink{struct_game}{Game}$\ast$ start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes timer, mouse and keyboard. Loads all bitmaps to the right member in game struct. Alocates space for the date and hour. 
+
+\begin{DoxyReturn}{Returns}
+pointer to the struct game 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___game_gadf0b0e23d862996b1c252ab29227ffb1_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,421 @@
+\hypertarget{struct_game}{}\section{Game Struct Reference}
+\label{struct_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_game_a492428101cf654ca73d0b290d6dc7dfc}{irq\+\_\+set\+\_\+kbd}
+\begin{DoxyCompactList}\small\item\em specifies the keyboard irq \end{DoxyCompactList}\item 
+int \hyperlink{struct_game_aadbf3757def1a49b68caa15ef9117b0f}{irq\+\_\+set\+\_\+timer}
+\begin{DoxyCompactList}\small\item\em specifies the timer irq \end{DoxyCompactList}\item 
+int \hyperlink{struct_game_afd357e4e90c5ce77865791f8e690db27}{irq\+\_\+set\+\_\+mouse}
+\begin{DoxyCompactList}\small\item\em specifies the mouse irq \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_game_a1d1878244696a8be772aa71772c33f0a}{packet} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em specifies the mouse packtes of the last interrupt \end{DoxyCompactList}\item 
+int \hyperlink{struct_game_aa5694ae37c0e6ed93d4875a167dfde0b}{intcounter}
+\begin{DoxyCompactList}\small\item\em number of interrupts counter \end{DoxyCompactList}\item 
+unsigned long \hyperlink{struct_game_a6804e7fc07260f01e4dc9db73879948a}{scan}
+\begin{DoxyCompactList}\small\item\em scan code of the keyboard of the last interrupt \end{DoxyCompactList}\item 
+unsigned long $\ast$ \hyperlink{struct_game_a47e819829ec45fd80f4994e3e07bd464}{day}
+\begin{DoxyCompactList}\small\item\em specifies the day that was got from the rtc \end{DoxyCompactList}\item 
+unsigned long $\ast$ \hyperlink{struct_game_ab0060eb6fa8a06edfb9a93b2eb1057f6}{month}
+\begin{DoxyCompactList}\small\item\em specifies the month that was got from the rtc \end{DoxyCompactList}\item 
+unsigned long $\ast$ \hyperlink{struct_game_a30df4f508d48870f42ddeb4f1519c737}{year}
+\begin{DoxyCompactList}\small\item\em specifies the year that was got from the rtc \end{DoxyCompactList}\item 
+unsigned long $\ast$ \hyperlink{struct_game_a8e1dd8c104588f46888076276ca85156}{hour}
+\begin{DoxyCompactList}\small\item\em specifies the hour that was got from the rtc \end{DoxyCompactList}\item 
+unsigned long $\ast$ \hyperlink{struct_game_a89704c83034c5498c532304b4a6a0f15}{minutes}
+\begin{DoxyCompactList}\small\item\em specifies the minutes that was got from the rtc \end{DoxyCompactList}\item 
+unsigned long $\ast$ \hyperlink{struct_game_a8cd7bab31a211893fd0eced50c2937ad}{seconds}
+\begin{DoxyCompactList}\small\item\em specifies the seconds that was got from the rtc \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ All the bitmaps}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_ad50c72d4974332bda06a2cd6831b2175}{start}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a41402ca6fb41d3af66d2db9dac02cc23}{gameover}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_aa6717db7288a48453552a20746f11644}{options}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a15de70574bc710486bf129a5c8f1634e}{background}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a8b5c5b1b81938802ce28261a7bcd6121}{deer}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a21ba575fc78f37cb0ff57a7bccee35a3}{deer2}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a33b47a9a25fd7e1f26bfdc65ec24878f}{deerdown}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_add8cae6a79535ad03e93471b7fa8966f}{santa}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a659095d2d4fbfc3a0e6cfefed6c9df67}{santa2}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a8e2568ac990bf65b346207c38f9b9d30}{santadown}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_ad7f286c4db8aaad603a752019e0f4505}{snowman}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_ad79926ad94ec835810bb1f561add7cb3}{snowman2}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_adee299bb7d3192b93398a37623c7d7b8}{snowmandown}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a78e9340cc0b28cd18c981daa6cb4bbcf}{gift}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a348b1dd54ea8a2a753876f57734af5fe}{candy}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a0863074f198120542c675bd18f611557}{snowball}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a7c5470289da6d158c774b458b9343b74}{trees}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a3c44e12d021ee83fe192c72582559ae5}{mouse}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a4352a17620cefeeae07479826bd7dd27}{clouds}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a77cd2a4f34d97866c63f80dd3cb7a474}{plaque}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a91347817cce11b30126d7223757eecaa}{zero}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a80e7bcf01a03e735a1c2ac42a1edbdf5}{one}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a32936da30300812ec66f54fee0a61b61}{two}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_aa20f906414abb9a57a3753d23a7a86a7}{three}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_addc54b87fea64f5e90ddafb9de5a1608}{four}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_add08c7108775ac493e341523d43e4541}{five}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a05ab9b8a2dde183189fd7e9244eadca7}{six}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a836a58a5a90d466c88faaf715390255b}{seven}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a77a6abf39adc1ef2245f8275f8c9cb5f}{eight}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a7991e77893cb1df475d8f5486a9fccc9}{nine}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a7e8b45f8df315cb4a376278b7fb19637}{score}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{struct_game_a6d2d795903f1107dcc2027bbd8de5f43}{until}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_game_a15de70574bc710486bf129a5c8f1634e}\label{struct_game_a15de70574bc710486bf129a5c8f1634e}} 
+\index{Game@{Game}!background@{background}}
+\index{background@{background}!Game@{Game}}
+\subsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ background}
+
+\mbox{\Hypertarget{struct_game_a348b1dd54ea8a2a753876f57734af5fe}\label{struct_game_a348b1dd54ea8a2a753876f57734af5fe}} 
+\index{Game@{Game}!candy@{candy}}
+\index{candy@{candy}!Game@{Game}}
+\subsubsection{\texorpdfstring{candy}{candy}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ candy}
+
+\mbox{\Hypertarget{struct_game_a4352a17620cefeeae07479826bd7dd27}\label{struct_game_a4352a17620cefeeae07479826bd7dd27}} 
+\index{Game@{Game}!clouds@{clouds}}
+\index{clouds@{clouds}!Game@{Game}}
+\subsubsection{\texorpdfstring{clouds}{clouds}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ clouds}
+
+\mbox{\Hypertarget{struct_game_a47e819829ec45fd80f4994e3e07bd464}\label{struct_game_a47e819829ec45fd80f4994e3e07bd464}} 
+\index{Game@{Game}!day@{day}}
+\index{day@{day}!Game@{Game}}
+\subsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily unsigned long$\ast$ day}
+
+
+
+specifies the day that was got from the rtc 
+
+\mbox{\Hypertarget{struct_game_a8b5c5b1b81938802ce28261a7bcd6121}\label{struct_game_a8b5c5b1b81938802ce28261a7bcd6121}} 
+\index{Game@{Game}!deer@{deer}}
+\index{deer@{deer}!Game@{Game}}
+\subsubsection{\texorpdfstring{deer}{deer}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ deer}
+
+\mbox{\Hypertarget{struct_game_a21ba575fc78f37cb0ff57a7bccee35a3}\label{struct_game_a21ba575fc78f37cb0ff57a7bccee35a3}} 
+\index{Game@{Game}!deer2@{deer2}}
+\index{deer2@{deer2}!Game@{Game}}
+\subsubsection{\texorpdfstring{deer2}{deer2}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ deer2}
+
+\mbox{\Hypertarget{struct_game_a33b47a9a25fd7e1f26bfdc65ec24878f}\label{struct_game_a33b47a9a25fd7e1f26bfdc65ec24878f}} 
+\index{Game@{Game}!deerdown@{deerdown}}
+\index{deerdown@{deerdown}!Game@{Game}}
+\subsubsection{\texorpdfstring{deerdown}{deerdown}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ deerdown}
+
+\mbox{\Hypertarget{struct_game_a77a6abf39adc1ef2245f8275f8c9cb5f}\label{struct_game_a77a6abf39adc1ef2245f8275f8c9cb5f}} 
+\index{Game@{Game}!eight@{eight}}
+\index{eight@{eight}!Game@{Game}}
+\subsubsection{\texorpdfstring{eight}{eight}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ eight}
+
+\mbox{\Hypertarget{struct_game_add08c7108775ac493e341523d43e4541}\label{struct_game_add08c7108775ac493e341523d43e4541}} 
+\index{Game@{Game}!five@{five}}
+\index{five@{five}!Game@{Game}}
+\subsubsection{\texorpdfstring{five}{five}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ five}
+
+\mbox{\Hypertarget{struct_game_addc54b87fea64f5e90ddafb9de5a1608}\label{struct_game_addc54b87fea64f5e90ddafb9de5a1608}} 
+\index{Game@{Game}!four@{four}}
+\index{four@{four}!Game@{Game}}
+\subsubsection{\texorpdfstring{four}{four}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ four}
+
+\mbox{\Hypertarget{struct_game_a41402ca6fb41d3af66d2db9dac02cc23}\label{struct_game_a41402ca6fb41d3af66d2db9dac02cc23}} 
+\index{Game@{Game}!gameover@{gameover}}
+\index{gameover@{gameover}!Game@{Game}}
+\subsubsection{\texorpdfstring{gameover}{gameover}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ gameover}
+
+\mbox{\Hypertarget{struct_game_a78e9340cc0b28cd18c981daa6cb4bbcf}\label{struct_game_a78e9340cc0b28cd18c981daa6cb4bbcf}} 
+\index{Game@{Game}!gift@{gift}}
+\index{gift@{gift}!Game@{Game}}
+\subsubsection{\texorpdfstring{gift}{gift}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ gift}
+
+\mbox{\Hypertarget{struct_game_a8e1dd8c104588f46888076276ca85156}\label{struct_game_a8e1dd8c104588f46888076276ca85156}} 
+\index{Game@{Game}!hour@{hour}}
+\index{hour@{hour}!Game@{Game}}
+\subsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily unsigned long$\ast$ hour}
+
+
+
+specifies the hour that was got from the rtc 
+
+\mbox{\Hypertarget{struct_game_aa5694ae37c0e6ed93d4875a167dfde0b}\label{struct_game_aa5694ae37c0e6ed93d4875a167dfde0b}} 
+\index{Game@{Game}!intcounter@{intcounter}}
+\index{intcounter@{intcounter}!Game@{Game}}
+\subsubsection{\texorpdfstring{intcounter}{intcounter}}
+{\footnotesize\ttfamily int intcounter}
+
+
+
+number of interrupts counter 
+
+\mbox{\Hypertarget{struct_game_a492428101cf654ca73d0b290d6dc7dfc}\label{struct_game_a492428101cf654ca73d0b290d6dc7dfc}} 
+\index{Game@{Game}!irq\+\_\+set\+\_\+kbd@{irq\+\_\+set\+\_\+kbd}}
+\index{irq\+\_\+set\+\_\+kbd@{irq\+\_\+set\+\_\+kbd}!Game@{Game}}
+\subsubsection{\texorpdfstring{irq\+\_\+set\+\_\+kbd}{irq\_set\_kbd}}
+{\footnotesize\ttfamily int irq\+\_\+set\+\_\+kbd}
+
+
+
+specifies the keyboard irq 
+
+\mbox{\Hypertarget{struct_game_afd357e4e90c5ce77865791f8e690db27}\label{struct_game_afd357e4e90c5ce77865791f8e690db27}} 
+\index{Game@{Game}!irq\+\_\+set\+\_\+mouse@{irq\+\_\+set\+\_\+mouse}}
+\index{irq\+\_\+set\+\_\+mouse@{irq\+\_\+set\+\_\+mouse}!Game@{Game}}
+\subsubsection{\texorpdfstring{irq\+\_\+set\+\_\+mouse}{irq\_set\_mouse}}
+{\footnotesize\ttfamily int irq\+\_\+set\+\_\+mouse}
+
+
+
+specifies the mouse irq 
+
+\mbox{\Hypertarget{struct_game_aadbf3757def1a49b68caa15ef9117b0f}\label{struct_game_aadbf3757def1a49b68caa15ef9117b0f}} 
+\index{Game@{Game}!irq\+\_\+set\+\_\+timer@{irq\+\_\+set\+\_\+timer}}
+\index{irq\+\_\+set\+\_\+timer@{irq\+\_\+set\+\_\+timer}!Game@{Game}}
+\subsubsection{\texorpdfstring{irq\+\_\+set\+\_\+timer}{irq\_set\_timer}}
+{\footnotesize\ttfamily int irq\+\_\+set\+\_\+timer}
+
+
+
+specifies the timer irq 
+
+\mbox{\Hypertarget{struct_game_a89704c83034c5498c532304b4a6a0f15}\label{struct_game_a89704c83034c5498c532304b4a6a0f15}} 
+\index{Game@{Game}!minutes@{minutes}}
+\index{minutes@{minutes}!Game@{Game}}
+\subsubsection{\texorpdfstring{minutes}{minutes}}
+{\footnotesize\ttfamily unsigned long$\ast$ minutes}
+
+
+
+specifies the minutes that was got from the rtc 
+
+\mbox{\Hypertarget{struct_game_ab0060eb6fa8a06edfb9a93b2eb1057f6}\label{struct_game_ab0060eb6fa8a06edfb9a93b2eb1057f6}} 
+\index{Game@{Game}!month@{month}}
+\index{month@{month}!Game@{Game}}
+\subsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily unsigned long$\ast$ month}
+
+
+
+specifies the month that was got from the rtc 
+
+\mbox{\Hypertarget{struct_game_a3c44e12d021ee83fe192c72582559ae5}\label{struct_game_a3c44e12d021ee83fe192c72582559ae5}} 
+\index{Game@{Game}!mouse@{mouse}}
+\index{mouse@{mouse}!Game@{Game}}
+\subsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ mouse}
+
+\mbox{\Hypertarget{struct_game_a7991e77893cb1df475d8f5486a9fccc9}\label{struct_game_a7991e77893cb1df475d8f5486a9fccc9}} 
+\index{Game@{Game}!nine@{nine}}
+\index{nine@{nine}!Game@{Game}}
+\subsubsection{\texorpdfstring{nine}{nine}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ nine}
+
+\mbox{\Hypertarget{struct_game_a80e7bcf01a03e735a1c2ac42a1edbdf5}\label{struct_game_a80e7bcf01a03e735a1c2ac42a1edbdf5}} 
+\index{Game@{Game}!one@{one}}
+\index{one@{one}!Game@{Game}}
+\subsubsection{\texorpdfstring{one}{one}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ one}
+
+\mbox{\Hypertarget{struct_game_aa6717db7288a48453552a20746f11644}\label{struct_game_aa6717db7288a48453552a20746f11644}} 
+\index{Game@{Game}!options@{options}}
+\index{options@{options}!Game@{Game}}
+\subsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ options}
+
+\mbox{\Hypertarget{struct_game_a1d1878244696a8be772aa71772c33f0a}\label{struct_game_a1d1878244696a8be772aa71772c33f0a}} 
+\index{Game@{Game}!packet@{packet}}
+\index{packet@{packet}!Game@{Game}}
+\subsubsection{\texorpdfstring{packet}{packet}}
+{\footnotesize\ttfamily unsigned char packet\mbox{[}3\mbox{]}}
+
+
+
+specifies the mouse packtes of the last interrupt 
+
+\mbox{\Hypertarget{struct_game_a77cd2a4f34d97866c63f80dd3cb7a474}\label{struct_game_a77cd2a4f34d97866c63f80dd3cb7a474}} 
+\index{Game@{Game}!plaque@{plaque}}
+\index{plaque@{plaque}!Game@{Game}}
+\subsubsection{\texorpdfstring{plaque}{plaque}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ plaque}
+
+\mbox{\Hypertarget{struct_game_add8cae6a79535ad03e93471b7fa8966f}\label{struct_game_add8cae6a79535ad03e93471b7fa8966f}} 
+\index{Game@{Game}!santa@{santa}}
+\index{santa@{santa}!Game@{Game}}
+\subsubsection{\texorpdfstring{santa}{santa}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ santa}
+
+\mbox{\Hypertarget{struct_game_a659095d2d4fbfc3a0e6cfefed6c9df67}\label{struct_game_a659095d2d4fbfc3a0e6cfefed6c9df67}} 
+\index{Game@{Game}!santa2@{santa2}}
+\index{santa2@{santa2}!Game@{Game}}
+\subsubsection{\texorpdfstring{santa2}{santa2}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ santa2}
+
+\mbox{\Hypertarget{struct_game_a8e2568ac990bf65b346207c38f9b9d30}\label{struct_game_a8e2568ac990bf65b346207c38f9b9d30}} 
+\index{Game@{Game}!santadown@{santadown}}
+\index{santadown@{santadown}!Game@{Game}}
+\subsubsection{\texorpdfstring{santadown}{santadown}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ santadown}
+
+\mbox{\Hypertarget{struct_game_a6804e7fc07260f01e4dc9db73879948a}\label{struct_game_a6804e7fc07260f01e4dc9db73879948a}} 
+\index{Game@{Game}!scan@{scan}}
+\index{scan@{scan}!Game@{Game}}
+\subsubsection{\texorpdfstring{scan}{scan}}
+{\footnotesize\ttfamily unsigned long scan}
+
+
+
+scan code of the keyboard of the last interrupt 
+
+\mbox{\Hypertarget{struct_game_a7e8b45f8df315cb4a376278b7fb19637}\label{struct_game_a7e8b45f8df315cb4a376278b7fb19637}} 
+\index{Game@{Game}!score@{score}}
+\index{score@{score}!Game@{Game}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ score}
+
+\mbox{\Hypertarget{struct_game_a8cd7bab31a211893fd0eced50c2937ad}\label{struct_game_a8cd7bab31a211893fd0eced50c2937ad}} 
+\index{Game@{Game}!seconds@{seconds}}
+\index{seconds@{seconds}!Game@{Game}}
+\subsubsection{\texorpdfstring{seconds}{seconds}}
+{\footnotesize\ttfamily unsigned long$\ast$ seconds}
+
+
+
+specifies the seconds that was got from the rtc 
+
+\mbox{\Hypertarget{struct_game_a836a58a5a90d466c88faaf715390255b}\label{struct_game_a836a58a5a90d466c88faaf715390255b}} 
+\index{Game@{Game}!seven@{seven}}
+\index{seven@{seven}!Game@{Game}}
+\subsubsection{\texorpdfstring{seven}{seven}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ seven}
+
+\mbox{\Hypertarget{struct_game_a05ab9b8a2dde183189fd7e9244eadca7}\label{struct_game_a05ab9b8a2dde183189fd7e9244eadca7}} 
+\index{Game@{Game}!six@{six}}
+\index{six@{six}!Game@{Game}}
+\subsubsection{\texorpdfstring{six}{six}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ six}
+
+\mbox{\Hypertarget{struct_game_a0863074f198120542c675bd18f611557}\label{struct_game_a0863074f198120542c675bd18f611557}} 
+\index{Game@{Game}!snowball@{snowball}}
+\index{snowball@{snowball}!Game@{Game}}
+\subsubsection{\texorpdfstring{snowball}{snowball}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ snowball}
+
+\mbox{\Hypertarget{struct_game_ad7f286c4db8aaad603a752019e0f4505}\label{struct_game_ad7f286c4db8aaad603a752019e0f4505}} 
+\index{Game@{Game}!snowman@{snowman}}
+\index{snowman@{snowman}!Game@{Game}}
+\subsubsection{\texorpdfstring{snowman}{snowman}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ snowman}
+
+\mbox{\Hypertarget{struct_game_ad79926ad94ec835810bb1f561add7cb3}\label{struct_game_ad79926ad94ec835810bb1f561add7cb3}} 
+\index{Game@{Game}!snowman2@{snowman2}}
+\index{snowman2@{snowman2}!Game@{Game}}
+\subsubsection{\texorpdfstring{snowman2}{snowman2}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ snowman2}
+
+\mbox{\Hypertarget{struct_game_adee299bb7d3192b93398a37623c7d7b8}\label{struct_game_adee299bb7d3192b93398a37623c7d7b8}} 
+\index{Game@{Game}!snowmandown@{snowmandown}}
+\index{snowmandown@{snowmandown}!Game@{Game}}
+\subsubsection{\texorpdfstring{snowmandown}{snowmandown}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ snowmandown}
+
+\mbox{\Hypertarget{struct_game_ad50c72d4974332bda06a2cd6831b2175}\label{struct_game_ad50c72d4974332bda06a2cd6831b2175}} 
+\index{Game@{Game}!start@{start}}
+\index{start@{start}!Game@{Game}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ start}
+
+\mbox{\Hypertarget{struct_game_aa20f906414abb9a57a3753d23a7a86a7}\label{struct_game_aa20f906414abb9a57a3753d23a7a86a7}} 
+\index{Game@{Game}!three@{three}}
+\index{three@{three}!Game@{Game}}
+\subsubsection{\texorpdfstring{three}{three}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ three}
+
+\mbox{\Hypertarget{struct_game_a7c5470289da6d158c774b458b9343b74}\label{struct_game_a7c5470289da6d158c774b458b9343b74}} 
+\index{Game@{Game}!trees@{trees}}
+\index{trees@{trees}!Game@{Game}}
+\subsubsection{\texorpdfstring{trees}{trees}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ trees}
+
+\mbox{\Hypertarget{struct_game_a32936da30300812ec66f54fee0a61b61}\label{struct_game_a32936da30300812ec66f54fee0a61b61}} 
+\index{Game@{Game}!two@{two}}
+\index{two@{two}!Game@{Game}}
+\subsubsection{\texorpdfstring{two}{two}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ two}
+
+\mbox{\Hypertarget{struct_game_a6d2d795903f1107dcc2027bbd8de5f43}\label{struct_game_a6d2d795903f1107dcc2027bbd8de5f43}} 
+\index{Game@{Game}!until@{until}}
+\index{until@{until}!Game@{Game}}
+\subsubsection{\texorpdfstring{until}{until}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ until}
+
+\mbox{\Hypertarget{struct_game_a30df4f508d48870f42ddeb4f1519c737}\label{struct_game_a30df4f508d48870f42ddeb4f1519c737}} 
+\index{Game@{Game}!year@{year}}
+\index{year@{year}!Game@{Game}}
+\subsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily unsigned long$\ast$ year}
+
+
+
+specifies the year that was got from the rtc 
+
+\mbox{\Hypertarget{struct_game_a91347817cce11b30126d7223757eecaa}\label{struct_game_a91347817cce11b30126d7223757eecaa}} 
+\index{Game@{Game}!zero@{zero}}
+\index{zero@{zero}!Game@{Game}}
+\subsubsection{\texorpdfstring{zero}{zero}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ zero}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{game_8h}{game.\+h}\end{DoxyCompactItemize}

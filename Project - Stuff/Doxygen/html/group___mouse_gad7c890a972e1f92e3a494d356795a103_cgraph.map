@@ -1,0 +1,5 @@
+<map id="mouse_cmd" name="mouse_cmd">
+<area shape="rect" id="node2" href="$group___mouse.html#gae7c331cf6f4c63d80b6bce11c2c8e771" title="Writes in the mouse. " alt="" coords="147,5,245,32"/>
+<area shape="rect" id="node4" href="$group___mouse.html#gaad10b68ed5addb9bd150288dd869d586" title="Reads the output buffer. " alt="" coords="147,56,245,83"/>
+<area shape="rect" id="node3" href="$group___keyboard.html#gabb9ee10191569258e0f22bdd0a95ba62" title="Waits 20 microseconds. " alt="" coords="293,31,347,57"/>
+</map>

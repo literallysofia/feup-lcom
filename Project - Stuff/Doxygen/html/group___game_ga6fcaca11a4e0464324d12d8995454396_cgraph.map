@@ -1,0 +1,8 @@
+<map id="leaveGame" name="leaveGame">
+<area shape="rect" id="node2" href="$group___timer.html#gab9eea51549744bca5c5c923b388bb4ee" title="Unsubscribes Timer 0 interrupts. " alt="" coords="145,5,294,32"/>
+<area shape="rect" id="node3" href="$group___keyboard.html#ga5bdf6cfb570c375192b0d87913b65c57" title="Unsubscribes keyboard interrupts. " alt="" coords="149,56,290,83"/>
+<area shape="rect" id="node4" href="$group___mouse.html#ga685ad2706aca36d9869a30a19b9f446a" title="Unsubscribes mouse interrupts. " alt="" coords="140,107,299,133"/>
+<area shape="rect" id="node5" href="$group___game.html#gac69172228ce6b7881580536187b0ce82" title="Deletes all bitmaps. " alt="" coords="167,157,272,184"/>
+<area shape="rect" id="node7" href="$group___state_machine.html#gad70668a1c3bdf581906790c7e7da0409" title="Frees the space allocated for the state machine. " alt="" coords="154,208,285,235"/>
+<area shape="rect" id="node6" href="$group___bitmap.html#ga08c1d4f4fff81df260d979ea8fc1aa61" title="Destroys the given bitmap, freeing all resources used by it. " alt="" coords="347,157,445,184"/>
+</map>

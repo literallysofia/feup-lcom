@@ -1,0 +1,50 @@
+\hypertarget{vbe_8c}{}\section{vbe.\+c File Reference}
+\label{vbe_8c}\index{vbe.\+c@{vbe.\+c}}
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$machine/int86.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lmlib.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vbe_8c_a0007120a310d0ec70307f51f43eb81a3}{L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+B\+IT}~14
+\item 
+\#define \hyperlink{vbe_8c_a68b87c2339cb305d66b69b5551b96c73}{P\+B2\+B\+A\+SE}(x)~(((x) $>$$>$ 4) \& 0x0\+F000)
+\item 
+\#define \hyperlink{vbe_8c_a70c65ed4c6d71865daa96d31befb33fd}{P\+B2\+O\+FF}(x)~((x) \& 0x0\+F\+F\+F\+F)
+\item 
+\#define \hyperlink{vbe_8c_ac60c0363a2c8ae2a674cf16bf51c8c75}{M\+O\+D\+E\+I\+N\+F\+O\+\_\+\+S\+I\+ZE}~256
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___v_b_e_ga4ef3234e41f2050bc094a22049b69e45}{vbe\+\_\+get\+\_\+mode\+\_\+info} (unsigned short mode, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$vmi\+\_\+p)
+\begin{DoxyCompactList}\small\item\em Returns information on the input V\+BE mode, including screen dimensions, color depth and V\+R\+AM physical address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vbe_8c_a0007120a310d0ec70307f51f43eb81a3}\label{vbe_8c_a0007120a310d0ec70307f51f43eb81a3}} 
+\index{vbe.\+c@{vbe.\+c}!L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+B\+IT@{L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+B\+IT}}
+\index{L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+B\+IT@{L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+B\+IT}!vbe.\+c@{vbe.\+c}}
+\subsubsection{\texorpdfstring{L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+B\+IT}{LINEAR\_MODEL\_BIT}}
+{\footnotesize\ttfamily \#define L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+B\+IT~14}
+
+\mbox{\Hypertarget{vbe_8c_ac60c0363a2c8ae2a674cf16bf51c8c75}\label{vbe_8c_ac60c0363a2c8ae2a674cf16bf51c8c75}} 
+\index{vbe.\+c@{vbe.\+c}!M\+O\+D\+E\+I\+N\+F\+O\+\_\+\+S\+I\+ZE@{M\+O\+D\+E\+I\+N\+F\+O\+\_\+\+S\+I\+ZE}}
+\index{M\+O\+D\+E\+I\+N\+F\+O\+\_\+\+S\+I\+ZE@{M\+O\+D\+E\+I\+N\+F\+O\+\_\+\+S\+I\+ZE}!vbe.\+c@{vbe.\+c}}
+\subsubsection{\texorpdfstring{M\+O\+D\+E\+I\+N\+F\+O\+\_\+\+S\+I\+ZE}{MODEINFO\_SIZE}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+I\+N\+F\+O\+\_\+\+S\+I\+ZE~256}
+
+\mbox{\Hypertarget{vbe_8c_a68b87c2339cb305d66b69b5551b96c73}\label{vbe_8c_a68b87c2339cb305d66b69b5551b96c73}} 
+\index{vbe.\+c@{vbe.\+c}!P\+B2\+B\+A\+SE@{P\+B2\+B\+A\+SE}}
+\index{P\+B2\+B\+A\+SE@{P\+B2\+B\+A\+SE}!vbe.\+c@{vbe.\+c}}
+\subsubsection{\texorpdfstring{P\+B2\+B\+A\+SE}{PB2BASE}}
+{\footnotesize\ttfamily \#define P\+B2\+B\+A\+SE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((x) $>$$>$ 4) \& 0x0\+F000)}
+
+\mbox{\Hypertarget{vbe_8c_a70c65ed4c6d71865daa96d31befb33fd}\label{vbe_8c_a70c65ed4c6d71865daa96d31befb33fd}} 
+\index{vbe.\+c@{vbe.\+c}!P\+B2\+O\+FF@{P\+B2\+O\+FF}}
+\index{P\+B2\+O\+FF@{P\+B2\+O\+FF}!vbe.\+c@{vbe.\+c}}
+\subsubsection{\texorpdfstring{P\+B2\+O\+FF}{PB2OFF}}
+{\footnotesize\ttfamily \#define P\+B2\+O\+FF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x) \& 0x0\+F\+F\+F\+F)}
+

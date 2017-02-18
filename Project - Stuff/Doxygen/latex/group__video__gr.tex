@@ -1,0 +1,135 @@
+\hypertarget{group__video__gr}{}\section{video\+\_\+gr}
+\label{group__video__gr}\index{video\+\_\+gr@{video\+\_\+gr}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__video__gr_gac854e8352d97c69bdfe247573593ba3b}{V\+R\+A\+M\+\_\+\+P\+H\+Y\+S\+\_\+\+A\+D\+DR}~0x\+E0000000
+\item 
+\#define \hyperlink{group__video__gr_gabf6f66114c31b8f87c80534ca695a00b}{H\+\_\+\+R\+ES}~1024
+\item 
+\#define \hyperlink{group__video__gr_gaac2466862bcfc18231c38fe1eacc22e3}{V\+\_\+\+R\+ES}~768
+\item 
+\#define \hyperlink{group__video__gr_ga35faf89171af20cd21088c37d62bb7ee}{B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}~8
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{group__video__gr_gacef21667c79365d57a084bed994c2189}{vg\+\_\+init} (unsigned short mode)
+\begin{DoxyCompactList}\small\item\em Initializes the video module in graphics mode. \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_ga42f593e6656f1a978315aff02b1bcebf}{vg\+\_\+exit} (void)
+\begin{DoxyCompactList}\small\item\em Returns to default Minix 3 text mode (0x03\+: 25 x 80, 16 colors) \end{DoxyCompactList}\item 
+void \hyperlink{group__video__gr_ga4f5703f9b121dc5e85673680a1082c7d}{D\+Bto\+VM} ()
+\begin{DoxyCompactList}\small\item\em copies what\textquotesingle{}s in the double buffer to the video mem. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__gr_gaec2a87af63bfdab6d54b82012bdaa80e}{call\+Bitmap} (\hyperlink{struct_bitmap}{Bitmap} $\ast$bmp, int x, int y)
+\begin{DoxyCompactList}\small\item\em Calls the function draw\+Bitmap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for outputing data to screen in graphics mode 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__video__gr_ga35faf89171af20cd21088c37d62bb7ee}\label{group__video__gr_ga35faf89171af20cd21088c37d62bb7ee}} 
+\index{video\+\_\+gr@{video\+\_\+gr}!B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL@{B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}}
+\index{B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL@{B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}!video\+\_\+gr@{video\+\_\+gr}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}{BITS\_PER\_PIXEL}}
+{\footnotesize\ttfamily \#define B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL~8}
+
+\mbox{\Hypertarget{group__video__gr_gabf6f66114c31b8f87c80534ca695a00b}\label{group__video__gr_gabf6f66114c31b8f87c80534ca695a00b}} 
+\index{video\+\_\+gr@{video\+\_\+gr}!H\+\_\+\+R\+ES@{H\+\_\+\+R\+ES}}
+\index{H\+\_\+\+R\+ES@{H\+\_\+\+R\+ES}!video\+\_\+gr@{video\+\_\+gr}}
+\subsubsection{\texorpdfstring{H\+\_\+\+R\+ES}{H\_RES}}
+{\footnotesize\ttfamily \#define H\+\_\+\+R\+ES~1024}
+
+\mbox{\Hypertarget{group__video__gr_gaac2466862bcfc18231c38fe1eacc22e3}\label{group__video__gr_gaac2466862bcfc18231c38fe1eacc22e3}} 
+\index{video\+\_\+gr@{video\+\_\+gr}!V\+\_\+\+R\+ES@{V\+\_\+\+R\+ES}}
+\index{V\+\_\+\+R\+ES@{V\+\_\+\+R\+ES}!video\+\_\+gr@{video\+\_\+gr}}
+\subsubsection{\texorpdfstring{V\+\_\+\+R\+ES}{V\_RES}}
+{\footnotesize\ttfamily \#define V\+\_\+\+R\+ES~768}
+
+\mbox{\Hypertarget{group__video__gr_gac854e8352d97c69bdfe247573593ba3b}\label{group__video__gr_gac854e8352d97c69bdfe247573593ba3b}} 
+\index{video\+\_\+gr@{video\+\_\+gr}!V\+R\+A\+M\+\_\+\+P\+H\+Y\+S\+\_\+\+A\+D\+DR@{V\+R\+A\+M\+\_\+\+P\+H\+Y\+S\+\_\+\+A\+D\+DR}}
+\index{V\+R\+A\+M\+\_\+\+P\+H\+Y\+S\+\_\+\+A\+D\+DR@{V\+R\+A\+M\+\_\+\+P\+H\+Y\+S\+\_\+\+A\+D\+DR}!video\+\_\+gr@{video\+\_\+gr}}
+\subsubsection{\texorpdfstring{V\+R\+A\+M\+\_\+\+P\+H\+Y\+S\+\_\+\+A\+D\+DR}{VRAM\_PHYS\_ADDR}}
+{\footnotesize\ttfamily \#define V\+R\+A\+M\+\_\+\+P\+H\+Y\+S\+\_\+\+A\+D\+DR~0x\+E0000000}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__video__gr_gaec2a87af63bfdab6d54b82012bdaa80e}\label{group__video__gr_gaec2a87af63bfdab6d54b82012bdaa80e}} 
+\index{video\+\_\+gr@{video\+\_\+gr}!call\+Bitmap@{call\+Bitmap}}
+\index{call\+Bitmap@{call\+Bitmap}!video\+\_\+gr@{video\+\_\+gr}}
+\subsubsection{\texorpdfstring{call\+Bitmap()}{callBitmap()}}
+{\footnotesize\ttfamily void call\+Bitmap (\begin{DoxyParamCaption}\item[{\hyperlink{struct_bitmap}{Bitmap} $\ast$}]{bmp,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Calls the function draw\+Bitmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bmp} & bitmap to call \\
+\hline
+{\em x} & of the left upper corner \\
+\hline
+{\em y} & of the left upper corner \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{group__video__gr_gaec2a87af63bfdab6d54b82012bdaa80e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video__gr_ga4f5703f9b121dc5e85673680a1082c7d}\label{group__video__gr_ga4f5703f9b121dc5e85673680a1082c7d}} 
+\index{video\+\_\+gr@{video\+\_\+gr}!D\+Bto\+VM@{D\+Bto\+VM}}
+\index{D\+Bto\+VM@{D\+Bto\+VM}!video\+\_\+gr@{video\+\_\+gr}}
+\subsubsection{\texorpdfstring{D\+Bto\+V\+M()}{DBtoVM()}}
+{\footnotesize\ttfamily void D\+Bto\+VM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+copies what\textquotesingle{}s in the double buffer to the video mem. 
+
+\mbox{\Hypertarget{group__video__gr_ga42f593e6656f1a978315aff02b1bcebf}\label{group__video__gr_ga42f593e6656f1a978315aff02b1bcebf}} 
+\index{video\+\_\+gr@{video\+\_\+gr}!vg\+\_\+exit@{vg\+\_\+exit}}
+\index{vg\+\_\+exit@{vg\+\_\+exit}!video\+\_\+gr@{video\+\_\+gr}}
+\subsubsection{\texorpdfstring{vg\+\_\+exit()}{vg\_exit()}}
+{\footnotesize\ttfamily int vg\+\_\+exit (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns to default Minix 3 text mode (0x03\+: 25 x 80, 16 colors) 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, non-\/zero upon failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__video__gr_gacef21667c79365d57a084bed994c2189}\label{group__video__gr_gacef21667c79365d57a084bed994c2189}} 
+\index{video\+\_\+gr@{video\+\_\+gr}!vg\+\_\+init@{vg\+\_\+init}}
+\index{vg\+\_\+init@{vg\+\_\+init}!video\+\_\+gr@{video\+\_\+gr}}
+\subsubsection{\texorpdfstring{vg\+\_\+init()}{vg\_init()}}
+{\footnotesize\ttfamily void$\ast$ vg\+\_\+init (\begin{DoxyParamCaption}\item[{unsigned short}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initializes the video module in graphics mode. 
+
+Uses the V\+BE I\+NT 0x10 interface to set the desired graphics mode, maps V\+R\+AM to the process\textquotesingle{} address space and initializes static global variables with the resolution of the screen, and the number of colors
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 16-\/bit V\+BE mode to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Virtual address V\+R\+AM was mapped to. N\+U\+LL, upon failure. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{group__video__gr_gacef21667c79365d57a084bed994c2189_cgraph}
+\end{center}
+\end{figure}

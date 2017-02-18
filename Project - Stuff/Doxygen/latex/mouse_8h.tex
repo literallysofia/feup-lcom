@@ -1,0 +1,19 @@
+\hypertarget{mouse_8h}{}\section{mouse.\+h File Reference}
+\label{mouse_8h}\index{mouse.\+h@{mouse.\+h}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___mouse_ga99506573209b197b84ee22a228b89fbd}{mouse\+\_\+subscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables mouse interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_ga685ad2706aca36d9869a30a19b9f446a}{mouse\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes mouse interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___mouse_ga4fb4a7f0f7a9ea26af0c1184b53f4bf3}{ddelay} ()
+\begin{DoxyCompactList}\small\item\em Waits 20 microseconds. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_gaad10b68ed5addb9bd150288dd869d586}{mouse\+\_\+\+Read} ()
+\begin{DoxyCompactList}\small\item\em Reads the output buffer. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_gae7c331cf6f4c63d80b6bce11c2c8e771}{mouse\+\_\+\+Write} (unsigned long cmd, unsigned long port)
+\begin{DoxyCompactList}\small\item\em Writes in the mouse. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_ga4f52e05e730b3482a7b249d818b816b1}{write\+\_\+\+Controller} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em Calls mouse\+\_\+\+Writer, used to send the cmd to write in the mouse. \end{DoxyCompactList}\item 
+int \hyperlink{group___mouse_gad7c890a972e1f92e3a494d356795a103}{mouse\+\_\+cmd} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em Writes in the mouse, verifying the A\+CK of the mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}

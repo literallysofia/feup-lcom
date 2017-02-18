@@ -1,0 +1,124 @@
+\hypertarget{graphics_8c}{}\section{graphics.\+c File Reference}
+\label{graphics_8c}\index{graphics.\+c@{graphics.\+c}}
+{\ttfamily \#include \char`\"{}state\+Machine.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+gr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}xmasrun.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___graphics_ga16103b3c6b6139878e7c3de81cf56925}{position\+Mouse\+Init} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Initializes the position of the mouse cursor. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga2b9d84216dd1b37a440ca6b71784c2fc}{position\+Init} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Initializes the positions of the gift, the candy cane, the pines, the snowball, the first set of clouds, the second set of clouds and the game score. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gaaa565b7e974eec01db91380f3ba991d2}{play\+Again} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Resets the choose your character plaque back to the default character. Resets the distances (jump and run distance) back to the default. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gae5f0e30e1262615f852a85d4db3c8261}{update\+Frame} (\hyperlink{struct_game}{Game} $\ast$game, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Updates every bitmap to the next positions. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gabde7c0fefaf3424db78158c805037cd3}{default\+Player} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Resets the plaque and the character to the default. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga1ff7208d640a7d4c62a49f5f81306be4}{change\+Player} (\hyperlink{struct_game}{Game} $\ast$game, int option)
+\begin{DoxyCompactList}\small\item\em Updates the character depending on the player option. If option is 1, the character would be the deer, if 2 the santa claus, if 3 the snowman. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gad185badd1bb6af7027ee2fba1539c055}{draw\+Plaque} (int option)
+\begin{DoxyCompactList}\small\item\em Updates the plaque position depending on the player option. If option is 1, the plaque will move to the deer, if 2 the santa claus, if 3 the snowman. \end{DoxyCompactList}\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{group___graphics_ga2480f417fa8ca1b9b31cf7677dff4541}{number\+To\+Bitmap} (\hyperlink{struct_game}{Game} $\ast$game, int number)
+\begin{DoxyCompactList}\small\item\em Converts the number passed as argument to the right bitmap number. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga60fea1793f63faa9ab7db42296e3d8a7}{score\+Counter} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Updates score bitmaps with its value. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga307c4ac67d1d0316a5e01620930504c5}{jump} ()
+\begin{DoxyCompactList}\small\item\em Updates the character position when it jumps. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga84ffc930c9e1c8c6de9173eadd3c975d}{movedown} ()
+\begin{DoxyCompactList}\small\item\em Updates the character position when it gets down. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gab2dd31b45cae53400c50cc728db456ca}{obj} ()
+\begin{DoxyCompactList}\small\item\em Updates the obstacles positions ang gets the next set of obstacles ready which is chosen randomly out of 3. It\textquotesingle{}s also chosen randomly if there\textquotesingle{}s a snowball in the next set or not. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga9c0ab323b39cd0254dbfdaa80dcac495}{collision} (\hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Checks if there\textquotesingle{}s a collision betwwen the character and the obstacles. \end{DoxyCompactList}\item 
+void \hyperlink{graphics_8c_ab4e9b69ed0ba3bbe963987fdba97956a}{draw\+Mouse} (\hyperlink{struct_game}{Game} $\ast$game)
+\item 
+int \hyperlink{group___graphics_gad474a474d64464f56c893125ae05fe15}{clicks\+Main\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player chose an option in the Main Menu. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gad55a59d3fd603520980e4794f29e83bd}{clicks\+Options\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player chose an option in the Options Menu. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga7b226a076e2fce195972329b07d54956}{clicks\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Checks if the player chose an option in the \hyperlink{struct_game}{Game} Over Menu. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gacffa4b2e3dcebc554a5c24dec748eb04}{update\+Date\+Hour} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Extracts date and hour from the R\+TC. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga16779210d6883bbec22aaed4546c2738}{days\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Counts how many days there is until Christmas. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga0e4bd2e0f0b7e0074f5c00a2373ef7b8}{rdn} (unsigned long y, unsigned long m, unsigned long d)
+\begin{DoxyCompactList}\small\item\em Calculates the number of days from 1/1/0001 until the date passed in the arguments. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gad894cc2aa0d11dd0d068a26a970568c0}{seconds\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Calculates the number of seconds until the next minute. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_ga9c96c725c4779f2b277be96d399752c0}{minutes\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Calculates the number of minutes until the next hour. \end{DoxyCompactList}\item 
+int \hyperlink{group___graphics_gaa4e1ad5e2668cefab925f9151e82cf56}{hours\+Left} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Calculates the number of hours until the next day. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_ga84e0c347e163833410a8df9d914402fa}{count\+Down} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Updates the value of the days, hours, minutes and seconds of the countdown. \end{DoxyCompactList}\item 
+void \hyperlink{group___graphics_gaadff1c974f62a2b8f18fde71535809fb}{count\+Down\+Draw} (\hyperlink{struct_game}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Updates the bitmaps of the countdown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{graphics_8c_abeb0e592b658c588d3d1b3c4e1d5dd5d}{jump\+Distance} = 168
+\item 
+static int \hyperlink{graphics_8c_a8f30e2a612dffb8a4e6212457779133f}{run\+Distance} = 10
+\item 
+static int \hyperlink{graphics_8c_a4256d0a0dea5f63aaf4fdd126a8f61f9}{down\+Distance} = 10
+\item 
+static int \hyperlink{graphics_8c_a53fd293fef6a860c8cb2769026e5d4b6}{up} = 1
+\item 
+static int \hyperlink{graphics_8c_aac8fc1be53dcc0753b735f20510be9d4}{down} = 1
+\item 
+static int \hyperlink{graphics_8c_ad30f972f2e6e3e5ecab0dee38ae6cdb8}{frame} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{graphics_8c_ab4e9b69ed0ba3bbe963987fdba97956a}\label{graphics_8c_ab4e9b69ed0ba3bbe963987fdba97956a}} 
+\index{graphics.\+c@{graphics.\+c}!draw\+Mouse@{draw\+Mouse}}
+\index{draw\+Mouse@{draw\+Mouse}!graphics.\+c@{graphics.\+c}}
+\subsubsection{\texorpdfstring{draw\+Mouse()}{drawMouse()}}
+{\footnotesize\ttfamily void draw\+Mouse (\begin{DoxyParamCaption}\item[{\hyperlink{struct_game}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{graphics_8c_aac8fc1be53dcc0753b735f20510be9d4}\label{graphics_8c_aac8fc1be53dcc0753b735f20510be9d4}} 
+\index{graphics.\+c@{graphics.\+c}!down@{down}}
+\index{down@{down}!graphics.\+c@{graphics.\+c}}
+\subsubsection{\texorpdfstring{down}{down}}
+{\footnotesize\ttfamily int down = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{graphics_8c_a4256d0a0dea5f63aaf4fdd126a8f61f9}\label{graphics_8c_a4256d0a0dea5f63aaf4fdd126a8f61f9}} 
+\index{graphics.\+c@{graphics.\+c}!down\+Distance@{down\+Distance}}
+\index{down\+Distance@{down\+Distance}!graphics.\+c@{graphics.\+c}}
+\subsubsection{\texorpdfstring{down\+Distance}{downDistance}}
+{\footnotesize\ttfamily int down\+Distance = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{graphics_8c_ad30f972f2e6e3e5ecab0dee38ae6cdb8}\label{graphics_8c_ad30f972f2e6e3e5ecab0dee38ae6cdb8}} 
+\index{graphics.\+c@{graphics.\+c}!frame@{frame}}
+\index{frame@{frame}!graphics.\+c@{graphics.\+c}}
+\subsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily int frame = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{graphics_8c_abeb0e592b658c588d3d1b3c4e1d5dd5d}\label{graphics_8c_abeb0e592b658c588d3d1b3c4e1d5dd5d}} 
+\index{graphics.\+c@{graphics.\+c}!jump\+Distance@{jump\+Distance}}
+\index{jump\+Distance@{jump\+Distance}!graphics.\+c@{graphics.\+c}}
+\subsubsection{\texorpdfstring{jump\+Distance}{jumpDistance}}
+{\footnotesize\ttfamily int jump\+Distance = 168\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{graphics_8c_a8f30e2a612dffb8a4e6212457779133f}\label{graphics_8c_a8f30e2a612dffb8a4e6212457779133f}} 
+\index{graphics.\+c@{graphics.\+c}!run\+Distance@{run\+Distance}}
+\index{run\+Distance@{run\+Distance}!graphics.\+c@{graphics.\+c}}
+\subsubsection{\texorpdfstring{run\+Distance}{runDistance}}
+{\footnotesize\ttfamily int run\+Distance = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{graphics_8c_a53fd293fef6a860c8cb2769026e5d4b6}\label{graphics_8c_a53fd293fef6a860c8cb2769026e5d4b6}} 
+\index{graphics.\+c@{graphics.\+c}!up@{up}}
+\index{up@{up}!graphics.\+c@{graphics.\+c}}
+\subsubsection{\texorpdfstring{up}{up}}
+{\footnotesize\ttfamily int up = 1\hspace{0.3cm}{\ttfamily [static]}}
+

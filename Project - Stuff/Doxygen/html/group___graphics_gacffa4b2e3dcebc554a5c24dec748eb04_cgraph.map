@@ -1,0 +1,7 @@
+<map id="updateDateHour" name="updateDateHour">
+<area shape="rect" id="node2" href="$group___r_t_c.html#gaa2b091a9cf7dce22b896bb1f041b3e2f" title="Checks if the rtc is updating, verifying the UIP in Register A. " alt="" coords="168,5,276,32"/>
+<area shape="rect" id="node3" href="$group___r_t_c.html#ga151db8d516dd649f8d14dab18be79882" title="Gets the current date from the RTC in binary. " alt="" coords="189,107,255,133"/>
+<area shape="rect" id="node6" href="$group___r_t_c.html#ga87be9dbdb025ecbb1bd326713842f043" title="Gets the current hour from the RTC in binary. " alt="" coords="189,56,255,83"/>
+<area shape="rect" id="node4" href="$group___r_t_c.html#gadc99d6e13380791f37d25254f382185b" title="Checks if the values given by the RTC are in BCD, verifying the DM in Register B. ..." alt="" coords="343,56,402,83"/>
+<area shape="rect" id="node5" href="$group___r_t_c.html#gac415cba00d3b076015e540f85de75b45" title="Converts values from bcd to binary. " alt="" coords="324,107,421,133"/>
+</map>

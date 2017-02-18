@@ -1,0 +1,242 @@
+\hypertarget{group___state_machine}{}\section{State\+Machine}
+\label{group___state_machine}\index{State\+Machine@{State\+Machine}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_states}{States}
+\begin{DoxyCompactList}\small\item\em Represents the current states in the two state machines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___state_machine_ga923762042f3074402fbf32bc96074164}{state\+\_\+game} \{ \newline
+\hyperlink{group___state_machine_gga923762042f3074402fbf32bc96074164ac22743f1fc74de09544ecc9bab74a17b}{M\+A\+I\+N\+\_\+\+M\+E\+NU}, 
+\hyperlink{group___state_machine_gga923762042f3074402fbf32bc96074164ad50cf309d7568040619ed26ee6835a84}{G\+A\+ME}, 
+\hyperlink{group___state_machine_gga923762042f3074402fbf32bc96074164a42495cc178524da331d4681864c72b72}{G\+A\+M\+E\+O\+V\+ER}, 
+\hyperlink{group___state_machine_gga923762042f3074402fbf32bc96074164a47392826c80116f57ab66b2132424dbf}{M\+E\+N\+U\+\_\+\+O\+P\+T\+I\+O\+NS}, 
+\newline
+\hyperlink{group___state_machine_gga923762042f3074402fbf32bc96074164a676fb7a17038f5f755e8acdabecba0ad}{C\+O\+MP}
+ \}\begin{DoxyCompactList}\small\item\em Represents the menus. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___state_machine_gafd7a2b0489d2d98e27f1311944de7b30}{event\+\_\+game} \{ \newline
+\hyperlink{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a0352906d1ea1dfcd663c918f3a86755b}{P\+L\+AY}, 
+\hyperlink{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a8f280224da64e98f2d52d50ec43bc197}{H\+O\+ME}, 
+\hyperlink{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30ad5384d1822c72da119100438c5051831}{C\+O\+L\+L\+I\+S\+I\+ON}, 
+\hyperlink{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a8bd68b27c1bc0f0c2b67e020bf079bc8}{P\+L\+A\+Y\+A\+G\+A\+IN}, 
+\newline
+\hyperlink{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a1b20f1b4adb6ff9778b284fb46f6f99d}{O\+P\+T\+I\+O\+NS}, 
+\hyperlink{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30adc6f24fd6915a3f2786a1b7045406924}{E\+ND}, 
+\hyperlink{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30af5297152557c7da396243000ca240e89}{E\+SC}
+ \}\begin{DoxyCompactList}\small\item\em Represents the transitions between menus. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___state_machine_gaa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t} \{ \hyperlink{group___state_machine_ggaa0aafed44fec19806d8f9ad834be1248a439c688a4e9ed31638d5922a50680a8e}{R\+UN}, 
+\hyperlink{group___state_machine_ggaa0aafed44fec19806d8f9ad834be1248a1f28d4392b1c1e7da2af2283632d81e1}{J\+U\+MP}, 
+\hyperlink{group___state_machine_ggaa0aafed44fec19806d8f9ad834be1248a9b0b4a95b99523966e0e34ffdadac9da}{D\+O\+WN}
+ \}\begin{DoxyCompactList}\small\item\em Represents the character states. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___state_machine_ga2fb9b58e4e5f14f40af8b4a1425841f8}{event\+\_\+t} \{ \hyperlink{group___state_machine_gga2fb9b58e4e5f14f40af8b4a1425841f8aba595d8bca8bc5e67c37c0a9d89becfa}{UP}, 
+\hyperlink{group___state_machine_gga2fb9b58e4e5f14f40af8b4a1425841f8a6a226f4143ca3b18999551694cdb72a8}{L\+OW}, 
+\hyperlink{group___state_machine_gga2fb9b58e4e5f14f40af8b4a1425841f8ac921ff2cfc571c1d19b0485d7f6926ee}{B\+A\+CK}
+ \}\begin{DoxyCompactList}\small\item\em Represents trasitions between the character states. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_states}{States} $\ast$ \hyperlink{group___state_machine_ga1b7814c2c4e8169a8561d47554c0639e}{new\+Game\+States} ()
+\begin{DoxyCompactList}\small\item\em Initializes both state machines. \end{DoxyCompactList}\item 
+void \hyperlink{group___state_machine_ga721160d2b84b87f2f8a78aa35978eb59}{check\+\_\+menu} (\hyperlink{group___state_machine_gafd7a2b0489d2d98e27f1311944de7b30}{event\+\_\+game} evt, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Updates the state related to the menu. \end{DoxyCompactList}\item 
+void \hyperlink{group___state_machine_ga993a672fc77bafce6ec7ef9db4008071}{check\+\_\+move} (\hyperlink{group___state_machine_ga2fb9b58e4e5f14f40af8b4a1425841f8}{event\+\_\+t} evt, \hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Updates the state related to the character. \end{DoxyCompactList}\item 
+void \hyperlink{group___state_machine_gad70668a1c3bdf581906790c7e7da0409}{delete\+Game\+States} (\hyperlink{struct_states}{States} $\ast$game\+States)
+\begin{DoxyCompactList}\small\item\em Frees the space allocated for the state machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group___state_machine_gafd7a2b0489d2d98e27f1311944de7b30}\label{group___state_machine_gafd7a2b0489d2d98e27f1311944de7b30}} 
+\index{State\+Machine@{State\+Machine}!event\+\_\+game@{event\+\_\+game}}
+\index{event\+\_\+game@{event\+\_\+game}!State\+Machine@{State\+Machine}}
+\subsubsection{\texorpdfstring{event\+\_\+game}{event\_game}}
+{\footnotesize\ttfamily enum \hyperlink{group___state_machine_gafd7a2b0489d2d98e27f1311944de7b30}{event\+\_\+game}}
+
+
+
+Represents the transitions between menus. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+AY@{P\+L\+AY}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!P\+L\+AY@{P\+L\+AY}}}\mbox{\Hypertarget{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a0352906d1ea1dfcd663c918f3a86755b}\label{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a0352906d1ea1dfcd663c918f3a86755b}} 
+P\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H\+O\+ME@{H\+O\+ME}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!H\+O\+ME@{H\+O\+ME}}}\mbox{\Hypertarget{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a8f280224da64e98f2d52d50ec43bc197}\label{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a8f280224da64e98f2d52d50ec43bc197}} 
+H\+O\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+L\+L\+I\+S\+I\+ON@{C\+O\+L\+L\+I\+S\+I\+ON}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!C\+O\+L\+L\+I\+S\+I\+ON@{C\+O\+L\+L\+I\+S\+I\+ON}}}\mbox{\Hypertarget{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30ad5384d1822c72da119100438c5051831}\label{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30ad5384d1822c72da119100438c5051831}} 
+C\+O\+L\+L\+I\+S\+I\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+Y\+A\+G\+A\+IN@{P\+L\+A\+Y\+A\+G\+A\+IN}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!P\+L\+A\+Y\+A\+G\+A\+IN@{P\+L\+A\+Y\+A\+G\+A\+IN}}}\mbox{\Hypertarget{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a8bd68b27c1bc0f0c2b67e020bf079bc8}\label{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a8bd68b27c1bc0f0c2b67e020bf079bc8}} 
+P\+L\+A\+Y\+A\+G\+A\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+P\+T\+I\+O\+NS@{O\+P\+T\+I\+O\+NS}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!O\+P\+T\+I\+O\+NS@{O\+P\+T\+I\+O\+NS}}}\mbox{\Hypertarget{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a1b20f1b4adb6ff9778b284fb46f6f99d}\label{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30a1b20f1b4adb6ff9778b284fb46f6f99d}} 
+O\+P\+T\+I\+O\+NS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+ND@{E\+ND}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!E\+ND@{E\+ND}}}\mbox{\Hypertarget{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30adc6f24fd6915a3f2786a1b7045406924}\label{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30adc6f24fd6915a3f2786a1b7045406924}} 
+E\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+SC@{E\+SC}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!E\+SC@{E\+SC}}}\mbox{\Hypertarget{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30af5297152557c7da396243000ca240e89}\label{group___state_machine_ggafd7a2b0489d2d98e27f1311944de7b30af5297152557c7da396243000ca240e89}} 
+E\+SC&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group___state_machine_ga2fb9b58e4e5f14f40af8b4a1425841f8}\label{group___state_machine_ga2fb9b58e4e5f14f40af8b4a1425841f8}} 
+\index{State\+Machine@{State\+Machine}!event\+\_\+t@{event\+\_\+t}}
+\index{event\+\_\+t@{event\+\_\+t}!State\+Machine@{State\+Machine}}
+\subsubsection{\texorpdfstring{event\+\_\+t}{event\_t}}
+{\footnotesize\ttfamily enum \hyperlink{group___state_machine_ga2fb9b58e4e5f14f40af8b4a1425841f8}{event\+\_\+t}}
+
+
+
+Represents trasitions between the character states. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP@{UP}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!UP@{UP}}}\mbox{\Hypertarget{group___state_machine_gga2fb9b58e4e5f14f40af8b4a1425841f8aba595d8bca8bc5e67c37c0a9d89becfa}\label{group___state_machine_gga2fb9b58e4e5f14f40af8b4a1425841f8aba595d8bca8bc5e67c37c0a9d89becfa}} 
+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+OW@{L\+OW}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!L\+OW@{L\+OW}}}\mbox{\Hypertarget{group___state_machine_gga2fb9b58e4e5f14f40af8b4a1425841f8a6a226f4143ca3b18999551694cdb72a8}\label{group___state_machine_gga2fb9b58e4e5f14f40af8b4a1425841f8a6a226f4143ca3b18999551694cdb72a8}} 
+L\+OW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+CK@{B\+A\+CK}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!B\+A\+CK@{B\+A\+CK}}}\mbox{\Hypertarget{group___state_machine_gga2fb9b58e4e5f14f40af8b4a1425841f8ac921ff2cfc571c1d19b0485d7f6926ee}\label{group___state_machine_gga2fb9b58e4e5f14f40af8b4a1425841f8ac921ff2cfc571c1d19b0485d7f6926ee}} 
+B\+A\+CK&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group___state_machine_ga923762042f3074402fbf32bc96074164}\label{group___state_machine_ga923762042f3074402fbf32bc96074164}} 
+\index{State\+Machine@{State\+Machine}!state\+\_\+game@{state\+\_\+game}}
+\index{state\+\_\+game@{state\+\_\+game}!State\+Machine@{State\+Machine}}
+\subsubsection{\texorpdfstring{state\+\_\+game}{state\_game}}
+{\footnotesize\ttfamily enum \hyperlink{group___state_machine_ga923762042f3074402fbf32bc96074164}{state\+\_\+game}}
+
+
+
+Represents the menus. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+A\+I\+N\+\_\+\+M\+E\+NU@{M\+A\+I\+N\+\_\+\+M\+E\+NU}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!M\+A\+I\+N\+\_\+\+M\+E\+NU@{M\+A\+I\+N\+\_\+\+M\+E\+NU}}}\mbox{\Hypertarget{group___state_machine_gga923762042f3074402fbf32bc96074164ac22743f1fc74de09544ecc9bab74a17b}\label{group___state_machine_gga923762042f3074402fbf32bc96074164ac22743f1fc74de09544ecc9bab74a17b}} 
+M\+A\+I\+N\+\_\+\+M\+E\+NU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+A\+ME@{G\+A\+ME}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!G\+A\+ME@{G\+A\+ME}}}\mbox{\Hypertarget{group___state_machine_gga923762042f3074402fbf32bc96074164ad50cf309d7568040619ed26ee6835a84}\label{group___state_machine_gga923762042f3074402fbf32bc96074164ad50cf309d7568040619ed26ee6835a84}} 
+G\+A\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+A\+M\+E\+O\+V\+ER@{G\+A\+M\+E\+O\+V\+ER}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!G\+A\+M\+E\+O\+V\+ER@{G\+A\+M\+E\+O\+V\+ER}}}\mbox{\Hypertarget{group___state_machine_gga923762042f3074402fbf32bc96074164a42495cc178524da331d4681864c72b72}\label{group___state_machine_gga923762042f3074402fbf32bc96074164a42495cc178524da331d4681864c72b72}} 
+G\+A\+M\+E\+O\+V\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+E\+N\+U\+\_\+\+O\+P\+T\+I\+O\+NS@{M\+E\+N\+U\+\_\+\+O\+P\+T\+I\+O\+NS}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!M\+E\+N\+U\+\_\+\+O\+P\+T\+I\+O\+NS@{M\+E\+N\+U\+\_\+\+O\+P\+T\+I\+O\+NS}}}\mbox{\Hypertarget{group___state_machine_gga923762042f3074402fbf32bc96074164a47392826c80116f57ab66b2132424dbf}\label{group___state_machine_gga923762042f3074402fbf32bc96074164a47392826c80116f57ab66b2132424dbf}} 
+M\+E\+N\+U\+\_\+\+O\+P\+T\+I\+O\+NS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+MP@{C\+O\+MP}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!C\+O\+MP@{C\+O\+MP}}}\mbox{\Hypertarget{group___state_machine_gga923762042f3074402fbf32bc96074164a676fb7a17038f5f755e8acdabecba0ad}\label{group___state_machine_gga923762042f3074402fbf32bc96074164a676fb7a17038f5f755e8acdabecba0ad}} 
+C\+O\+MP&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group___state_machine_gaa0aafed44fec19806d8f9ad834be1248}\label{group___state_machine_gaa0aafed44fec19806d8f9ad834be1248}} 
+\index{State\+Machine@{State\+Machine}!state\+\_\+t@{state\+\_\+t}}
+\index{state\+\_\+t@{state\+\_\+t}!State\+Machine@{State\+Machine}}
+\subsubsection{\texorpdfstring{state\+\_\+t}{state\_t}}
+{\footnotesize\ttfamily enum \hyperlink{group___state_machine_gaa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t}}
+
+
+
+Represents the character states. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+UN@{R\+UN}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!R\+UN@{R\+UN}}}\mbox{\Hypertarget{group___state_machine_ggaa0aafed44fec19806d8f9ad834be1248a439c688a4e9ed31638d5922a50680a8e}\label{group___state_machine_ggaa0aafed44fec19806d8f9ad834be1248a439c688a4e9ed31638d5922a50680a8e}} 
+R\+UN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{J\+U\+MP@{J\+U\+MP}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!J\+U\+MP@{J\+U\+MP}}}\mbox{\Hypertarget{group___state_machine_ggaa0aafed44fec19806d8f9ad834be1248a1f28d4392b1c1e7da2af2283632d81e1}\label{group___state_machine_ggaa0aafed44fec19806d8f9ad834be1248a1f28d4392b1c1e7da2af2283632d81e1}} 
+J\+U\+MP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+O\+WN@{D\+O\+WN}!State\+Machine@{State\+Machine}}\index{State\+Machine@{State\+Machine}!D\+O\+WN@{D\+O\+WN}}}\mbox{\Hypertarget{group___state_machine_ggaa0aafed44fec19806d8f9ad834be1248a9b0b4a95b99523966e0e34ffdadac9da}\label{group___state_machine_ggaa0aafed44fec19806d8f9ad834be1248a9b0b4a95b99523966e0e34ffdadac9da}} 
+D\+O\+WN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___state_machine_ga721160d2b84b87f2f8a78aa35978eb59}\label{group___state_machine_ga721160d2b84b87f2f8a78aa35978eb59}} 
+\index{State\+Machine@{State\+Machine}!check\+\_\+menu@{check\+\_\+menu}}
+\index{check\+\_\+menu@{check\+\_\+menu}!State\+Machine@{State\+Machine}}
+\subsubsection{\texorpdfstring{check\+\_\+menu()}{check\_menu()}}
+{\footnotesize\ttfamily void check\+\_\+menu (\begin{DoxyParamCaption}\item[{\hyperlink{group___state_machine_gafd7a2b0489d2d98e27f1311944de7b30}{event\+\_\+game}}]{evt,  }\item[{\hyperlink{struct_states}{States} $\ast$}]{game\+States }\end{DoxyParamCaption})}
+
+
+
+Updates the state related to the menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & the transition to the next state \\
+\hline
+{\em game\+States} & the struct with the current states in the two state machines \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___state_machine_ga993a672fc77bafce6ec7ef9db4008071}\label{group___state_machine_ga993a672fc77bafce6ec7ef9db4008071}} 
+\index{State\+Machine@{State\+Machine}!check\+\_\+move@{check\+\_\+move}}
+\index{check\+\_\+move@{check\+\_\+move}!State\+Machine@{State\+Machine}}
+\subsubsection{\texorpdfstring{check\+\_\+move()}{check\_move()}}
+{\footnotesize\ttfamily void check\+\_\+move (\begin{DoxyParamCaption}\item[{\hyperlink{group___state_machine_ga2fb9b58e4e5f14f40af8b4a1425841f8}{event\+\_\+t}}]{evt,  }\item[{\hyperlink{struct_states}{States} $\ast$}]{game\+States }\end{DoxyParamCaption})}
+
+
+
+Updates the state related to the character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & the transition to the next state \\
+\hline
+{\em game\+States} & the struct with the current states in the two state machines \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___state_machine_gad70668a1c3bdf581906790c7e7da0409}\label{group___state_machine_gad70668a1c3bdf581906790c7e7da0409}} 
+\index{State\+Machine@{State\+Machine}!delete\+Game\+States@{delete\+Game\+States}}
+\index{delete\+Game\+States@{delete\+Game\+States}!State\+Machine@{State\+Machine}}
+\subsubsection{\texorpdfstring{delete\+Game\+States()}{deleteGameStates()}}
+{\footnotesize\ttfamily void delete\+Game\+States (\begin{DoxyParamCaption}\item[{\hyperlink{struct_states}{States} $\ast$}]{game\+States }\end{DoxyParamCaption})}
+
+
+
+Frees the space allocated for the state machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+States} & the struct with the current states in the two state machines \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___state_machine_ga1b7814c2c4e8169a8561d47554c0639e}\label{group___state_machine_ga1b7814c2c4e8169a8561d47554c0639e}} 
+\index{State\+Machine@{State\+Machine}!new\+Game\+States@{new\+Game\+States}}
+\index{new\+Game\+States@{new\+Game\+States}!State\+Machine@{State\+Machine}}
+\subsubsection{\texorpdfstring{new\+Game\+States()}{newGameStates()}}
+{\footnotesize\ttfamily \hyperlink{struct_states}{States}$\ast$ new\+Game\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes both state machines. 
+
+\begin{DoxyReturn}{Returns}
+the struct with the current states in the two state machines 
+\end{DoxyReturn}
