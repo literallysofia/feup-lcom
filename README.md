@@ -32,14 +32,14 @@ Project
 > Grade: 18/20 <br>
 
 **Screenshots** <br> <br>
-<img src="https://github.com/literallysofia/feup-lcom/blob/master/Project%20-%20Stuff/Relat%C3%B3rios/main%20menu.PNG" width="500"><br>
+<img src="https://github.com/literallysofia/feup-lcom/blob/master/Project_Stuff/Relat%C3%B3rios/main%20menu.PNG" width="500"><br>
 **Fig. 1: Main menu** <br><br>
 
-<img src="https://github.com/literallysofia/feup-lcom/blob/master/Project%20-%20Stuff/Relat%C3%B3rios/game.png" width="500"><br>
+<img src="https://github.com/literallysofia/feup-lcom/blob/master/Project_Stuff/Relat%C3%B3rios/game.png" width="500"><br>
 **Fig. 2: Game** <br><br>
 
-<img src="https://github.com/literallysofia/feup-lcom/blob/master/Project%20-%20Stuff/Relat%C3%B3rios/choose%20menu.PNG" width="500"><br>
+<img src="https://github.com/literallysofia/feup-lcom/blob/master/Project_Stuff/Relat%C3%B3rios/choose%20menu.PNG" width="500"><br>
 **Fig. 3: Choose Character menu** <br><br>
 
-<img src="https://github.com/literallysofia/feup-lcom/blob/master/Project%20-%20Stuff/Relat%C3%B3rios/over%20menu.PNG" width="500"><br>
+<img src="https://github.com/literallysofia/feup-lcom/blob/master/Project_Stuff/Relat%C3%B3rios/over%20menu.PNG" width="500"><br>
 **Fig. 4: Game Over menu**
